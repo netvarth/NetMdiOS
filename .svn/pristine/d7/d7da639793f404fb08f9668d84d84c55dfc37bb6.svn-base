@@ -1,0 +1,79 @@
+//
+//  PatientExaminationsViewController.m
+//  NetMdiOS
+//
+//  Created by Netvarth_Mac2 on 17/08/15.
+//  Copyright (c) 2015 Netvarth_Mac2. All rights reserved.
+//
+
+#import "PatientExaminationsViewController.h"
+#import "PatientHeaderDetailsView.h"
+
+@interface PatientExaminationsViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property(nonatomic,strong) IBOutlet UITableView* tblView;
+@property(nonatomic,strong)PatientHeaderDetailsView* hDetails;
+
+-(IBAction)backBtnPrsd:(id)sender;
+
+@end
+
+@implementation PatientExaminationsViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+     [self loadPatientDetailsHeader];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString* simpleTableIdentifier = @"ExaminationCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    if (cell == nil)
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+        
+    }
+    
+    
+    return cell;
+}
+
+-(void)loadPatientDetailsHeader
+{
+    _hDetails = [[PatientHeaderDetailsView alloc] initWithFrame:CGRectMake(0.0f, 43.0f, 750.0f, 65.0f)];
+    [self.view addSubview:_hDetails];
+}
+
+-(IBAction)backBtnPrsd:(id)sender
+{
+    [self.view removeFromSuperview];
+}
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end

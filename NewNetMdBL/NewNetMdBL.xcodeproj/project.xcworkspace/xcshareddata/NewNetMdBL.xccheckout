@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0B0BB445-4336-4E63-9ED0-A707CA6E7CAC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NewNetMdBL</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CCF5A246-7013-448D-A160-FF5846AA3A9C</key>
+		<string>http://192.168.1.35:8001/svn/netvarth/NetMdiOS/branches/NetMdiOS</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NewNetMdBL/NewNetMdBL.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CCF5A246-7013-448D-A160-FF5846AA3A9C</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>CCF5A246-7013-448D-A160-FF5846AA3A9C</key>
+		<string>http://192.168.1.35:8001/svn/netvarth</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://192.168.1.35:8001/svn/netvarth/NetMdiOS/branches/NetMdiOS/NewNetMdBL/NewNetMdBL.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CCF5A246-7013-448D-A160-FF5846AA3A9C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryBranchesRelativeLocationKey</key>
+			<string>NetMdiOS/branches</string>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlRepositoryTagsRelativeLocationKey</key>
+			<string>NetMdiOS/tags</string>
+			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
+			<string>NetMdiOS/trunk</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CCF5A246-7013-448D-A160-FF5846AA3A9C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NetMdiOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

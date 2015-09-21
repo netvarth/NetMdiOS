@@ -1,0 +1,76 @@
+//
+//  ViewPatientDetailsViewController.m
+//  NetMdiOS
+//
+//  Created by Netvarth_Mac2 on 13/08/15.
+//  Copyright (c) 2015 Netvarth_Mac2. All rights reserved.
+//
+
+#import "ViewPatientDetailsViewController.h"
+#import "PatientDetailsView.h"
+#import "CurrentMedConditionView.h"
+#import "History.h"
+
+
+@interface ViewPatientDetailsViewController ()
+
+@property(nonatomic,strong)PatientDetailsView* patientDetailsView;
+@property(nonatomic,strong)CurrentMedConditionView* currentMedCondView;
+@property(nonatomic,strong)History* historyView;
+
+
+-(IBAction)segmentValueChanged:(id)sender;
+-(IBAction)backBtnPrsd:(id)sender;
+@end
+
+@implementation ViewPatientDetailsViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    _patientDetailsView = [[PatientDetailsView alloc] initWithFrame:CGRectMake(90.0f, 82.0f, 600.0f, 790.0f)];
+    //_currentMedCondView = [[CurrentMedConditionView alloc] initWithFrame:CGRectMake(0.0f, 82.0f, 768.0f, 815.0f)];
+     _currentMedCondView = [[CurrentMedConditionView alloc] initWithFrame:CGRectMake(90.0f, 82.0f, 600.0f, 790.0f)];
+    _historyView = [[History alloc] initWithFrame:CGRectMake(90.0f, 82.0f, 600.0f, 790.0f)];
+    [self.view addSubview:_patientDetailsView];
+}
+
+-(IBAction)segmentValueChanged:(id)sender
+{
+    UISegmentedControl* segment = (UISegmentedControl*)sender;
+    switch (segment.selectedSegmentIndex)
+    {
+        case 0:
+            _currentMedCondView.hidden = YES;
+            _historyView.hidden = YES;
+            _patientDetailsView.hidden = NO;
+            [self.view addSubview:_patientDetailsView];
+            break;
+        case 1:
+            _patientDetailsView.hidden = YES;
+            _historyView.hidden = YES;
+            _currentMedCondView.hidden = NO;
+            [self.view addSubview:_currentMedCondView];
+            break;
+            
+        default:
+            _patientDetailsView.hidden = YES;
+            _currentMedCondView.hidden = YES;
+            _historyView.hidden = NO;
+            [self.view addSubview:_historyView];
+            break;
+    }
+}
+
+-(IBAction)backBtnPrsd:(id)sender
+{
+    [self.view removeFromSuperview];
+}
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+
+
+@end

@@ -1,0 +1,1306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6105006F188F9BF10033A7CF /* OwnerService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6105006E188F9BF10033A7CF /* OwnerService.m */; };
+		61050070188F9C6C0033A7CF /* OwnerDao.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6105006C188F9ADC0033A7CF /* OwnerDao.h */; };
+		61050071188F9C6C0033A7CF /* OwnerService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6105006D188F9BF10033A7CF /* OwnerService.h */; };
+		612D1F6E187A9C2900BFDE68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 612D1F6D187A9C2900BFDE68 /* Foundation.framework */; };
+		612D1F73187A9C2900BFDE68 /* NewNetMdBL.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D1F72187A9C2900BFDE68 /* NewNetMdBL.h */; };
+		612D1F75187A9C2900BFDE68 /* NewNetMdBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D1F74187A9C2900BFDE68 /* NewNetMdBL.m */; };
+		612D1F7C187A9C2900BFDE68 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 612D1F7B187A9C2900BFDE68 /* XCTest.framework */; };
+		612D1F7D187A9C2900BFDE68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 612D1F6D187A9C2900BFDE68 /* Foundation.framework */; };
+		612D1F7F187A9C2900BFDE68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 612D1F7E187A9C2900BFDE68 /* UIKit.framework */; };
+		612D1F82187A9C2900BFDE68 /* libNewNetMdBL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 612D1F6A187A9C2900BFDE68 /* libNewNetMdBL.a */; };
+		612D1F88187A9C2900BFDE68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 612D1F86187A9C2900BFDE68 /* InfoPlist.strings */; };
+		612D1F8A187A9C2900BFDE68 /* NewNetMdBLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D1F89187A9C2900BFDE68 /* NewNetMdBLTests.m */; };
+		612D2149187A9C6B00BFDE68 /* DoctorValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2048187A9C6A00BFDE68 /* DoctorValidator.m */; };
+		612D214A187A9C6B00BFDE68 /* AppointmentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D204B187A9C6A00BFDE68 /* AppointmentService.m */; };
+		612D214B187A9C6B00BFDE68 /* DoctorService.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D204D187A9C6A00BFDE68 /* DoctorService.m */; };
+		612D214C187A9C6B00BFDE68 /* LoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D204F187A9C6A00BFDE68 /* LoginService.m */; };
+		612D214D187A9C6B00BFDE68 /* MessageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2051187A9C6A00BFDE68 /* MessageService.m */; };
+		612D214E187A9C6B00BFDE68 /* PatientService.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2053187A9C6A00BFDE68 /* PatientService.m */; };
+		612D214F187A9C6B00BFDE68 /* ScheduleService.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2055187A9C6A00BFDE68 /* ScheduleService.m */; };
+		612D2150187A9C6B00BFDE68 /* ServerCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2057187A9C6A00BFDE68 /* ServerCall.m */; };
+		612D2151187A9C6B00BFDE68 /* AppointmentDetailsDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D205E187A9C6A00BFDE68 /* AppointmentDetailsDTO.m */; };
+		612D2152187A9C6B00BFDE68 /* AppointmentDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2060187A9C6A00BFDE68 /* AppointmentDTO.m */; };
+		612D2153187A9C6B00BFDE68 /* AppointmentListResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2062187A9C6A00BFDE68 /* AppointmentListResponseDTO.m */; };
+		612D2154187A9C6B00BFDE68 /* CaseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2064187A9C6A00BFDE68 /* CaseDTO.m */; };
+		612D2155187A9C6B00BFDE68 /* CaseListResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2066187A9C6A00BFDE68 /* CaseListResponseDTO.m */; };
+		612D2156187A9C6B00BFDE68 /* CaseResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2068187A9C6A00BFDE68 /* CaseResponseDTO.m */; };
+		612D2157187A9C6B00BFDE68 /* DoctorAchievementDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D206A187A9C6A00BFDE68 /* DoctorAchievementDTO.m */; };
+		612D2158187A9C6B00BFDE68 /* DoctorDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D206C187A9C6A00BFDE68 /* DoctorDetail.m */; };
+		612D2159187A9C6B00BFDE68 /* DoctorDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D206E187A9C6A00BFDE68 /* DoctorDTO.m */; };
+		612D215A187A9C6B00BFDE68 /* DoctorExperienceDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2070187A9C6A00BFDE68 /* DoctorExperienceDTO.m */; };
+		612D215B187A9C6B00BFDE68 /* DoctorExpertiseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2072187A9C6A00BFDE68 /* DoctorExpertiseDTO.m */; };
+		612D215C187A9C6B00BFDE68 /* DoctorListAchievementDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2074187A9C6A00BFDE68 /* DoctorListAchievementDTO.m */; };
+		612D215D187A9C6B00BFDE68 /* DoctorListExperienceDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2076187A9C6A00BFDE68 /* DoctorListExperienceDTO.m */; };
+		612D215E187A9C6B00BFDE68 /* DoctorListExpertiseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2078187A9C6A00BFDE68 /* DoctorListExpertiseDTO.m */; };
+		612D215F187A9C6B00BFDE68 /* DoctorListMembershipDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D207A187A9C6A00BFDE68 /* DoctorListMembershipDTO.m */; };
+		612D2160187A9C6B00BFDE68 /* DoctorListQualificationDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D207C187A9C6A00BFDE68 /* DoctorListQualificationDTO.m */; };
+		612D2161187A9C6B00BFDE68 /* DoctorListResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D207E187A9C6A00BFDE68 /* DoctorListResponse.m */; };
+		612D2162187A9C6B00BFDE68 /* DoctorLoginDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2080187A9C6A00BFDE68 /* DoctorLoginDTO.m */; };
+		612D2163187A9C6B00BFDE68 /* DoctorMembership.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2081187A9C6A00BFDE68 /* DoctorMembership.m */; };
+		612D2164187A9C6B00BFDE68 /* DoctorPersonalDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2084187A9C6A00BFDE68 /* DoctorPersonalDTO.m */; };
+		612D2165187A9C6B00BFDE68 /* DoctorQualificationDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2086187A9C6A00BFDE68 /* DoctorQualificationDTO.m */; };
+		612D2166187A9C6B00BFDE68 /* DoctorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2088187A9C6A00BFDE68 /* DoctorResponse.m */; };
+		612D2167187A9C6B00BFDE68 /* DoctorScheduleTimeDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D208A187A9C6A00BFDE68 /* DoctorScheduleTimeDTO.m */; };
+		612D2168187A9C6B00BFDE68 /* ErrorCodeListResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D208C187A9C6A00BFDE68 /* ErrorCodeListResponseDTO.m */; };
+		612D2169187A9C6B00BFDE68 /* ErrorDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D208E187A9C6A00BFDE68 /* ErrorDTO.m */; };
+		612D216A187A9C6B00BFDE68 /* Errors.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2090187A9C6A00BFDE68 /* Errors.m */; };
+		612D216B187A9C6B00BFDE68 /* Expression.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2092187A9C6A00BFDE68 /* Expression.m */; };
+		612D216C187A9C6B00BFDE68 /* Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2094187A9C6A00BFDE68 /* Filter.m */; };
+		612D216D187A9C6B00BFDE68 /* HeaderDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2096187A9C6A00BFDE68 /* HeaderDTO.m */; };
+		612D216E187A9C6B00BFDE68 /* HeaderResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D2098187A9C6A00BFDE68 /* HeaderResponseDTO.m */; };
+		612D216F187A9C6B00BFDE68 /* LoginDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D209A187A9C6A00BFDE68 /* LoginDTO.m */; };
+		612D2170187A9C6B00BFDE68 /* LoginResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D209C187A9C6A00BFDE68 /* LoginResponseDTO.m */; };
+		612D2171187A9C6B00BFDE68 /* MedicalListResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D209E187A9C6A00BFDE68 /* MedicalListResponseDTO.m */; };
+		612D2172187A9C6B00BFDE68 /* MedicalRecordDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20A0187A9C6A00BFDE68 /* MedicalRecordDTO.m */; };
+		612D2173187A9C6B00BFDE68 /* MessageDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20A2187A9C6A00BFDE68 /* MessageDTO.m */; };
+		612D2174187A9C6B00BFDE68 /* MessageListResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20A4187A9C6A00BFDE68 /* MessageListResponse.m */; };
+		612D2175187A9C6B00BFDE68 /* NetMdActivationResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20A6187A9C6A00BFDE68 /* NetMdActivationResponseDTO.m */; };
+		612D2176187A9C6B00BFDE68 /* NetMdBranchDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20A8187A9C6A00BFDE68 /* NetMdBranchDTO.m */; };
+		612D2177187A9C6B00BFDE68 /* NetMdDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20AA187A9C6A00BFDE68 /* NetMdDTO.m */; };
+		612D2178187A9C6B00BFDE68 /* NetMdResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20AC187A9C6A00BFDE68 /* NetMdResponseDTO.m */; };
+		612D2179187A9C6B00BFDE68 /* NetMdUserDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20AE187A9C6A00BFDE68 /* NetMdUserDetail.m */; };
+		612D217A187A9C6B00BFDE68 /* NetMdUserDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20B0187A9C6A00BFDE68 /* NetMdUserDTO.m */; };
+		612D217B187A9C6B00BFDE68 /* OwnerDetailDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20B2187A9C6B00BFDE68 /* OwnerDetailDTO.m */; };
+		612D217C187A9C6B00BFDE68 /* Parameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20B4187A9C6B00BFDE68 /* Parameter.m */; };
+		612D217D187A9C6B00BFDE68 /* PassPhraseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20B6187A9C6B00BFDE68 /* PassPhraseDTO.m */; };
+		612D217E187A9C6B00BFDE68 /* PatientDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20B8187A9C6B00BFDE68 /* PatientDetail.m */; };
+		612D217F187A9C6B00BFDE68 /* PatientListResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20BA187A9C6B00BFDE68 /* PatientListResponseDTO.m */; };
+		612D2180187A9C6B00BFDE68 /* PatientMedicalHistoryDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20BC187A9C6B00BFDE68 /* PatientMedicalHistoryDTO.m */; };
+		612D2181187A9C6B00BFDE68 /* PatientResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20BE187A9C6B00BFDE68 /* PatientResponse.m */; };
+		612D2182187A9C6B00BFDE68 /* ReferralDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20C0187A9C6B00BFDE68 /* ReferralDetails.m */; };
+		612D2183187A9C6B00BFDE68 /* ResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20C2187A9C6B00BFDE68 /* ResponseDTO.m */; };
+		612D2184187A9C6B00BFDE68 /* ResultListResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20C4187A9C6B00BFDE68 /* ResultListResponseDTO.m */; };
+		612D2185187A9C6B00BFDE68 /* RetrievalAppointmentResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20C6187A9C6B00BFDE68 /* RetrievalAppointmentResponseDTO.m */; };
+		612D2186187A9C6B00BFDE68 /* RetrievalPatientResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20C8187A9C6B00BFDE68 /* RetrievalPatientResponseDTO.m */; };
+		612D2187187A9C6B00BFDE68 /* RetrievalScheduleResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20CA187A9C6B00BFDE68 /* RetrievalScheduleResponseDTO.m */; };
+		612D2188187A9C6B00BFDE68 /* RetrievalUserResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20CC187A9C6B00BFDE68 /* RetrievalUserResponseDTO.m */; };
+		612D2189187A9C6B00BFDE68 /* RetrievealDoctorResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20CE187A9C6B00BFDE68 /* RetrievealDoctorResponseDTO.m */; };
+		612D218A187A9C6B00BFDE68 /* RetrieveResultsResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20D0187A9C6B00BFDE68 /* RetrieveResultsResponseDTO.m */; };
+		612D218B187A9C6B00BFDE68 /* ScheduleDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20D2187A9C6B00BFDE68 /* ScheduleDetail.m */; };
+		612D218C187A9C6B00BFDE68 /* ScheduleDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20D4187A9C6B00BFDE68 /* ScheduleDTO.m */; };
+		612D218D187A9C6B00BFDE68 /* ScheduleListDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20D6187A9C6B00BFDE68 /* ScheduleListDTO.m */; };
+		612D218E187A9C6B00BFDE68 /* ScheduleResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20D8187A9C6B00BFDE68 /* ScheduleResponse.m */; };
+		612D218F187A9C6B00BFDE68 /* SeriesDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20DA187A9C6B00BFDE68 /* SeriesDTO.m */; };
+		612D2191187A9C6B00BFDE68 /* SyncResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20DE187A9C6B00BFDE68 /* SyncResponseDTO.m */; };
+		612D2192187A9C6B00BFDE68 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20E0187A9C6B00BFDE68 /* User.m */; };
+		612D2193187A9C6B00BFDE68 /* UserDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20E2187A9C6B00BFDE68 /* UserDetails.m */; };
+		612D2194187A9C6B00BFDE68 /* UserDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20E4187A9C6B00BFDE68 /* UserDTO.m */; };
+		612D2195187A9C6B00BFDE68 /* UserInfoDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20E6187A9C6B00BFDE68 /* UserInfoDetail.m */; };
+		612D2196187A9C6B00BFDE68 /* UserResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20E8187A9C6B00BFDE68 /* UserResponse.m */; };
+		612D2197187A9C6B00BFDE68 /* ViewDoctorDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20EA187A9C6B00BFDE68 /* ViewDoctorDTO.m */; };
+		612D2198187A9C6B00BFDE68 /* ViewResultDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20EC187A9C6B00BFDE68 /* ViewResultDTO.m */; };
+		612D2199187A9C6B00BFDE68 /* ViewResultResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20EE187A9C6B00BFDE68 /* ViewResultResponseDTO.m */; };
+		612D219A187A9C6B00BFDE68 /* ViewScheduleDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20F0187A9C6B00BFDE68 /* ViewScheduleDTO.m */; };
+		612D219B187A9C6B00BFDE68 /* ViewScheduleListDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 612D20F2187A9C6B00BFDE68 /* ViewScheduleListDTO.m */; };
+		612D219C187A9D3C00BFDE68 /* DoctorValidator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2047187A9C6A00BFDE68 /* DoctorValidator.h */; };
+		612D219D187A9D3C00BFDE68 /* AppointmentService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D204A187A9C6A00BFDE68 /* AppointmentService.h */; };
+		612D219E187A9D3C00BFDE68 /* DoctorService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D204C187A9C6A00BFDE68 /* DoctorService.h */; };
+		612D219F187A9D3C00BFDE68 /* LoginService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D204E187A9C6A00BFDE68 /* LoginService.h */; };
+		612D21A0187A9D3C00BFDE68 /* MessageService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2050187A9C6A00BFDE68 /* MessageService.h */; };
+		612D21A1187A9D3C00BFDE68 /* PatientService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2052187A9C6A00BFDE68 /* PatientService.h */; };
+		612D21A2187A9D3C00BFDE68 /* ScheduleService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2054187A9C6A00BFDE68 /* ScheduleService.h */; };
+		612D21A3187A9D3C00BFDE68 /* ServerCall.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2056187A9C6A00BFDE68 /* ServerCall.h */; };
+		612D21A4187A9D3C00BFDE68 /* ScheduleDao.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2058187A9C6A00BFDE68 /* ScheduleDao.h */; };
+		612D21A5187A9D3C00BFDE68 /* PatientDao.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2059187A9C6A00BFDE68 /* PatientDao.h */; };
+		612D21A6187A9D3C00BFDE68 /* MessageDao.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D205A187A9C6A00BFDE68 /* MessageDao.h */; };
+		612D21A7187A9D3C00BFDE68 /* LoginDao.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D205B187A9C6A00BFDE68 /* LoginDao.h */; };
+		612D21A8187A9D3C00BFDE68 /* AppointmentDetailsDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D205D187A9C6A00BFDE68 /* AppointmentDetailsDTO.h */; };
+		612D21A9187A9D3C00BFDE68 /* AppointmentDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D205F187A9C6A00BFDE68 /* AppointmentDTO.h */; };
+		612D21AA187A9D3C00BFDE68 /* AppointmentListResponseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2061187A9C6A00BFDE68 /* AppointmentListResponseDTO.h */; };
+		612D21AB187A9D3C00BFDE68 /* CaseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2063187A9C6A00BFDE68 /* CaseDTO.h */; };
+		612D21AC187A9D3C00BFDE68 /* CaseListResponseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2065187A9C6A00BFDE68 /* CaseListResponseDTO.h */; };
+		612D21AD187A9D3C00BFDE68 /* CaseResponseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2067187A9C6A00BFDE68 /* CaseResponseDTO.h */; };
+		612D21AE187A9D3C00BFDE68 /* DoctorAchievementDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2069187A9C6A00BFDE68 /* DoctorAchievementDTO.h */; };
+		612D21AF187A9D3C00BFDE68 /* DoctorDetail.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D206B187A9C6A00BFDE68 /* DoctorDetail.h */; };
+		612D21B0187A9D3C00BFDE68 /* DoctorDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D206D187A9C6A00BFDE68 /* DoctorDTO.h */; };
+		612D21B1187A9D3C00BFDE68 /* DoctorExperienceDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D206F187A9C6A00BFDE68 /* DoctorExperienceDTO.h */; };
+		612D21B2187A9D3C00BFDE68 /* DoctorExpertiseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2071187A9C6A00BFDE68 /* DoctorExpertiseDTO.h */; };
+		612D21B3187A9D3C00BFDE68 /* DoctorListAchievementDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2073187A9C6A00BFDE68 /* DoctorListAchievementDTO.h */; };
+		612D21B4187A9D3C00BFDE68 /* DoctorListExperienceDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2075187A9C6A00BFDE68 /* DoctorListExperienceDTO.h */; };
+		612D21B5187A9D3C00BFDE68 /* DoctorListExpertiseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2077187A9C6A00BFDE68 /* DoctorListExpertiseDTO.h */; };
+		612D21B6187A9D3C00BFDE68 /* DoctorListMembershipDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2079187A9C6A00BFDE68 /* DoctorListMembershipDTO.h */; };
+		612D21B7187A9D3C00BFDE68 /* DoctorListQualificationDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D207B187A9C6A00BFDE68 /* DoctorListQualificationDTO.h */; };
+		612D21B8187A9D3C00BFDE68 /* DoctorListResponse.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D207D187A9C6A00BFDE68 /* DoctorListResponse.h */; };
+		612D21B9187A9D3C00BFDE68 /* DoctorLoginDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D207F187A9C6A00BFDE68 /* DoctorLoginDTO.h */; };
+		612D21BA187A9D3C00BFDE68 /* DoctorMembershipDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2082187A9C6A00BFDE68 /* DoctorMembershipDTO.h */; };
+		612D21BB187A9D3C00BFDE68 /* DoctorPersonalDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2083187A9C6A00BFDE68 /* DoctorPersonalDTO.h */; };
+		612D21BC187A9D3C00BFDE68 /* DoctorQualificationDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2085187A9C6A00BFDE68 /* DoctorQualificationDTO.h */; };
+		612D21BD187A9D3C00BFDE68 /* DoctorResponse.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2087187A9C6A00BFDE68 /* DoctorResponse.h */; };
+		612D21BE187A9D3C00BFDE68 /* DoctorScheduleTimeDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2089187A9C6A00BFDE68 /* DoctorScheduleTimeDTO.h */; };
+		612D21BF187A9D3C00BFDE68 /* ErrorCodeListResponseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D208B187A9C6A00BFDE68 /* ErrorCodeListResponseDTO.h */; };
+		612D21C0187A9D3C00BFDE68 /* ErrorDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D208D187A9C6A00BFDE68 /* ErrorDTO.h */; };
+		612D21C1187A9D3C00BFDE68 /* Errors.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D208F187A9C6A00BFDE68 /* Errors.h */; };
+		612D21C2187A9D3C00BFDE68 /* Expression.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2091187A9C6A00BFDE68 /* Expression.h */; };
+		612D21C3187A9D3C00BFDE68 /* Filter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2093187A9C6A00BFDE68 /* Filter.h */; };
+		612D21C4187A9D3C00BFDE68 /* HeaderDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2095187A9C6A00BFDE68 /* HeaderDTO.h */; };
+		612D21C5187A9D3C00BFDE68 /* HeaderResponseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2097187A9C6A00BFDE68 /* HeaderResponseDTO.h */; };
+		612D21C6187A9D3C00BFDE68 /* LoginDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D2099187A9C6A00BFDE68 /* LoginDTO.h */; };
+		612D21C7187A9D3C00BFDE68 /* LoginResponseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D209B187A9C6A00BFDE68 /* LoginResponseDTO.h */; };
+		612D21C8187A9D3C00BFDE68 /* MedicalListResponseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D209D187A9C6A00BFDE68 /* MedicalListResponseDTO.h */; };
+		612D21C9187A9D3C00BFDE68 /* MedicalRecordDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D209F187A9C6A00BFDE68 /* MedicalRecordDTO.h */; };
+		612D21CA187A9D3C00BFDE68 /* MessageDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20A1187A9C6A00BFDE68 /* MessageDTO.h */; };
+		612D21CB187A9D3C00BFDE68 /* MessageListResponse.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20A3187A9C6A00BFDE68 /* MessageListResponse.h */; };
+		612D21CC187A9D3C00BFDE68 /* NetMdActivationResponseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20A5187A9C6A00BFDE68 /* NetMdActivationResponseDTO.h */; };
+		612D21CD187A9D3C00BFDE68 /* NetMdBranchDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20A7187A9C6A00BFDE68 /* NetMdBranchDTO.h */; };
+		612D21CE187A9D3C00BFDE68 /* NetMdDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20A9187A9C6A00BFDE68 /* NetMdDTO.h */; };
+		612D21CF187A9D3C00BFDE68 /* NetMdResponseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20AB187A9C6A00BFDE68 /* NetMdResponseDTO.h */; };
+		612D21D0187A9D3C00BFDE68 /* NetMdUserDetail.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20AD187A9C6A00BFDE68 /* NetMdUserDetail.h */; };
+		612D21D1187A9D3C00BFDE68 /* NetMdUserDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20AF187A9C6A00BFDE68 /* NetMdUserDTO.h */; };
+		612D21D2187A9D3C00BFDE68 /* OwnerDetailDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20B1187A9C6A00BFDE68 /* OwnerDetailDTO.h */; };
+		612D21D3187A9D3C00BFDE68 /* Parameter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20B3187A9C6B00BFDE68 /* Parameter.h */; };
+		612D21D4187A9D3C00BFDE68 /* PassPhraseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20B5187A9C6B00BFDE68 /* PassPhraseDTO.h */; };
+		612D21D5187A9D3C00BFDE68 /* PatientDetail.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20B7187A9C6B00BFDE68 /* PatientDetail.h */; };
+		612D21D6187A9D3C00BFDE68 /* PatientListResponseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20B9187A9C6B00BFDE68 /* PatientListResponseDTO.h */; };
+		612D21D7187A9D3C00BFDE68 /* PatientMedicalHistoryDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20BB187A9C6B00BFDE68 /* PatientMedicalHistoryDTO.h */; };
+		612D21D8187A9D3C00BFDE68 /* PatientResponse.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20BD187A9C6B00BFDE68 /* PatientResponse.h */; };
+		612D21D9187A9D3C00BFDE68 /* ReferralDetails.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20BF187A9C6B00BFDE68 /* ReferralDetails.h */; };
+		612D21DA187A9D3C00BFDE68 /* ResponseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20C1187A9C6B00BFDE68 /* ResponseDTO.h */; };
+		612D21DB187A9D3C00BFDE68 /* ResultListResponseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20C3187A9C6B00BFDE68 /* ResultListResponseDTO.h */; };
+		612D21DC187A9D3C00BFDE68 /* RetrievalAppointmentResponseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20C5187A9C6B00BFDE68 /* RetrievalAppointmentResponseDTO.h */; };
+		612D21DD187A9D3C00BFDE68 /* RetrievalPatientResponseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20C7187A9C6B00BFDE68 /* RetrievalPatientResponseDTO.h */; };
+		612D21DE187A9D3C00BFDE68 /* RetrievalScheduleResponseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20C9187A9C6B00BFDE68 /* RetrievalScheduleResponseDTO.h */; };
+		612D21DF187A9D3C00BFDE68 /* RetrievalUserResponseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20CB187A9C6B00BFDE68 /* RetrievalUserResponseDTO.h */; };
+		612D21E0187A9D3C00BFDE68 /* RetrievealDoctorResponseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20CD187A9C6B00BFDE68 /* RetrievealDoctorResponseDTO.h */; };
+		612D21E1187A9D3C00BFDE68 /* RetrieveResultsResponseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20CF187A9C6B00BFDE68 /* RetrieveResultsResponseDTO.h */; };
+		612D21E2187A9D3C00BFDE68 /* ScheduleDetail.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20D1187A9C6B00BFDE68 /* ScheduleDetail.h */; };
+		612D21E3187A9D3C00BFDE68 /* ScheduleDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20D3187A9C6B00BFDE68 /* ScheduleDTO.h */; };
+		612D21E4187A9D3C00BFDE68 /* ScheduleListDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20D5187A9C6B00BFDE68 /* ScheduleListDTO.h */; };
+		612D21E5187A9D3C00BFDE68 /* ScheduleResponse.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20D7187A9C6B00BFDE68 /* ScheduleResponse.h */; };
+		612D21E6187A9D3C00BFDE68 /* SeriesDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20D9187A9C6B00BFDE68 /* SeriesDTO.h */; };
+		612D21E8187A9D3C00BFDE68 /* SyncResponseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20DD187A9C6B00BFDE68 /* SyncResponseDTO.h */; };
+		612D21E9187A9D3C00BFDE68 /* User.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20DF187A9C6B00BFDE68 /* User.h */; };
+		612D21EA187A9D3C00BFDE68 /* UserDetails.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20E1187A9C6B00BFDE68 /* UserDetails.h */; };
+		612D21EB187A9D3C00BFDE68 /* UserDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20E3187A9C6B00BFDE68 /* UserDTO.h */; };
+		612D21EC187A9D3C00BFDE68 /* UserInfoDetail.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20E5187A9C6B00BFDE68 /* UserInfoDetail.h */; };
+		612D21ED187A9D3C00BFDE68 /* UserResponse.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20E7187A9C6B00BFDE68 /* UserResponse.h */; };
+		612D21EE187A9D3C00BFDE68 /* ViewDoctorDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20E9187A9C6B00BFDE68 /* ViewDoctorDTO.h */; };
+		612D21EF187A9D3C00BFDE68 /* ViewResultDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20EB187A9C6B00BFDE68 /* ViewResultDTO.h */; };
+		612D21F0187A9D3C00BFDE68 /* ViewResultResponseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20ED187A9C6B00BFDE68 /* ViewResultResponseDTO.h */; };
+		612D21F1187A9D3C00BFDE68 /* ViewScheduleDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20EF187A9C6B00BFDE68 /* ViewScheduleDTO.h */; };
+		612D21F2187A9D3C00BFDE68 /* ViewScheduleListDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20F1187A9C6B00BFDE68 /* ViewScheduleListDTO.h */; };
+		612D21F3187A9D3C00BFDE68 /* DoctorDao.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20F3187A9C6B00BFDE68 /* DoctorDao.h */; };
+		612D21F4187A9D3C00BFDE68 /* AppointmentDao.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 612D20F4187A9C6B00BFDE68 /* AppointmentDao.h */; };
+		8A5B270C1A970DBB00727B7B /* RecurringTimeSlotDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B270B1A970DBB00727B7B /* RecurringTimeSlotDTO.m */; };
+		8A5B2A711A97309300727B7B /* RecurringTimeSlotDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A5B270A1A970DBB00727B7B /* RecurringTimeSlotDTO.h */; };
+		8A90D33C1A22FD2900D3598F /* SyncablePojo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A90D33B1A22FD2900D3598F /* SyncablePojo.m */; };
+		8A90D3871A23043300D3598F /* SyncablePojo.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A90D33A1A22FD2900D3598F /* SyncablePojo.h */; };
+		8A90D38A1A23047300D3598F /* SourceLocale.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A90D3891A23047300D3598F /* SourceLocale.m */; };
+		8A90D38B1A23050E00D3598F /* SourceLocale.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A90D3881A23047300D3598F /* SourceLocale.h */; };
+		8A91975E1A26F1C10079CFBA /* DesLocale.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A91975D1A26F1C10079CFBA /* DesLocale.m */; };
+		8A91975F1A26F2460079CFBA /* DesLocale.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A91975C1A26F1C10079CFBA /* DesLocale.h */; };
+		8A9498461923403E000CB353 /* SyncDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AA17351191B663D00F957AA /* SyncDTO.h */; };
+		8A9498AA1923443F000CB353 /* ServerService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9498A91923443F000CB353 /* ServerService.m */; };
+		8A9498B11923464B000CB353 /* ServiceDao.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A9498AE19234597000CB353 /* ServiceDao.h */; };
+		8A94991419234705000CB353 /* ServerService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A9498A81923443F000CB353 /* ServerService.h */; };
+		8A95ACFA1887948800787337 /* CurrentUserDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A95ACF91887948800787337 /* CurrentUserDTO.m */; };
+		8A95AD581887974900787337 /* CurrentUserDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A95ACF81887948800787337 /* CurrentUserDTO.h */; };
+		8A990D51195D383B0004ADD2 /* CaseSyncResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A990D50195D383B0004ADD2 /* CaseSyncResponseDTO.m */; };
+		8A990D54195D385C0004ADD2 /* MesicalRecordsSyncResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A990D53195D385C0004ADD2 /* MesicalRecordsSyncResponseDTO.m */; };
+		8A990D55195D39DE0004ADD2 /* CaseSyncResponseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A990D4F195D383B0004ADD2 /* CaseSyncResponseDTO.h */; };
+		8A990D56195D3A0E0004ADD2 /* MesicalRecordsSyncResponseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A990D52195D385C0004ADD2 /* MesicalRecordsSyncResponseDTO.h */; };
+		8A9AC01A19599219004C24B2 /* AppointmentResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9AC01919599219004C24B2 /* AppointmentResponseDTO.m */; };
+		8A9AC01B1959932C004C24B2 /* AppointmentResponseDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A9AC01819599219004C24B2 /* AppointmentResponseDTO.h */; };
+		8A9CF2D5199375EE00BF78EE /* AdminService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CF2D4199375EE00BF78EE /* AdminService.m */; };
+		8A9CF2D91993782400BF78EE /* AdminDao.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A9CF2D61993762100BF78EE /* AdminDao.h */; };
+		8A9CF2DA1993783300BF78EE /* AdminService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A9CF2D3199375EE00BF78EE /* AdminService.h */; };
+		8AA17353191B663D00F957AA /* SyncDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA17352191B663D00F957AA /* SyncDTO.m */; };
+		8ABD38411AA5A0400062A3A5 /* TimeSpecDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABD38401AA5A0400062A3A5 /* TimeSpecDTO.m */; };
+		8ABD38421AA5A0C20062A3A5 /* TimeSpecDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8ABD383F1AA5A0400062A3A5 /* TimeSpecDTO.h */; };
+		8AD1AABE1AB04AC200AAD93B /* ViewDocScheduleDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD1AABD1AB04AC200AAD93B /* ViewDocScheduleDTO.m */; };
+		8AD1AABF1AB04F0000AAD93B /* ViewDocScheduleDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AD1AABC1AB04AC200AAD93B /* ViewDocScheduleDTO.h */; };
+		8AD235111AA0666200209C1A /* DocScheduleDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD235101AA0666200209C1A /* DocScheduleDTO.m */; };
+		8AD235121AA0673600209C1A /* DocScheduleDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AD2350F1AA0666200209C1A /* DocScheduleDTO.h */; };
+		8AD5DB031ADF7CD80051E6CA /* VacationSpecDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5DB021ADF7CD80051E6CA /* VacationSpecDTO.m */; };
+		8AD5DB061ADF7D420051E6CA /* EmployeeVacation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5DB051ADF7D420051E6CA /* EmployeeVacation.m */; };
+		8AD5DBE81ADF8C730051E6CA /* VacationSpecDTO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AD5DB011ADF7CD80051E6CA /* VacationSpecDTO.h */; };
+		8AD5DBE91ADF8C730051E6CA /* EmployeeVacation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AD5DB041ADF7D420051E6CA /* EmployeeVacation.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		612D1F80187A9C2900BFDE68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 612D1F62187A9C2900BFDE68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 612D1F69187A9C2900BFDE68;
+			remoteInfo = NewNetMdBL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		612D1F68187A9C2900BFDE68 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include;
+			dstSubfolderSpec = 16;
+			files = (
+				8AD5DBE81ADF8C730051E6CA /* VacationSpecDTO.h in CopyFiles */,
+				8AD5DBE91ADF8C730051E6CA /* EmployeeVacation.h in CopyFiles */,
+				8AD1AABF1AB04F0000AAD93B /* ViewDocScheduleDTO.h in CopyFiles */,
+				8ABD38421AA5A0C20062A3A5 /* TimeSpecDTO.h in CopyFiles */,
+				8AD235121AA0673600209C1A /* DocScheduleDTO.h in CopyFiles */,
+				8A5B2A711A97309300727B7B /* RecurringTimeSlotDTO.h in CopyFiles */,
+				8A91975F1A26F2460079CFBA /* DesLocale.h in CopyFiles */,
+				8A90D38B1A23050E00D3598F /* SourceLocale.h in CopyFiles */,
+				8A90D3871A23043300D3598F /* SyncablePojo.h in CopyFiles */,
+				8A9CF2DA1993783300BF78EE /* AdminService.h in CopyFiles */,
+				8A9CF2D91993782400BF78EE /* AdminDao.h in CopyFiles */,
+				8A990D56195D3A0E0004ADD2 /* MesicalRecordsSyncResponseDTO.h in CopyFiles */,
+				8A990D55195D39DE0004ADD2 /* CaseSyncResponseDTO.h in CopyFiles */,
+				8A9AC01B1959932C004C24B2 /* AppointmentResponseDTO.h in CopyFiles */,
+				8A94991419234705000CB353 /* ServerService.h in CopyFiles */,
+				8A9498B11923464B000CB353 /* ServiceDao.h in CopyFiles */,
+				8A9498461923403E000CB353 /* SyncDTO.h in CopyFiles */,
+				61050070188F9C6C0033A7CF /* OwnerDao.h in CopyFiles */,
+				61050071188F9C6C0033A7CF /* OwnerService.h in CopyFiles */,
+				8A95AD581887974900787337 /* CurrentUserDTO.h in CopyFiles */,
+				612D219C187A9D3C00BFDE68 /* DoctorValidator.h in CopyFiles */,
+				612D219D187A9D3C00BFDE68 /* AppointmentService.h in CopyFiles */,
+				612D219E187A9D3C00BFDE68 /* DoctorService.h in CopyFiles */,
+				612D219F187A9D3C00BFDE68 /* LoginService.h in CopyFiles */,
+				612D21A0187A9D3C00BFDE68 /* MessageService.h in CopyFiles */,
+				612D21A1187A9D3C00BFDE68 /* PatientService.h in CopyFiles */,
+				612D21A2187A9D3C00BFDE68 /* ScheduleService.h in CopyFiles */,
+				612D21A3187A9D3C00BFDE68 /* ServerCall.h in CopyFiles */,
+				612D21A4187A9D3C00BFDE68 /* ScheduleDao.h in CopyFiles */,
+				612D21A5187A9D3C00BFDE68 /* PatientDao.h in CopyFiles */,
+				612D21A6187A9D3C00BFDE68 /* MessageDao.h in CopyFiles */,
+				612D21A7187A9D3C00BFDE68 /* LoginDao.h in CopyFiles */,
+				612D21A8187A9D3C00BFDE68 /* AppointmentDetailsDTO.h in CopyFiles */,
+				612D21A9187A9D3C00BFDE68 /* AppointmentDTO.h in CopyFiles */,
+				612D21AA187A9D3C00BFDE68 /* AppointmentListResponseDTO.h in CopyFiles */,
+				612D21AB187A9D3C00BFDE68 /* CaseDTO.h in CopyFiles */,
+				612D21AC187A9D3C00BFDE68 /* CaseListResponseDTO.h in CopyFiles */,
+				612D21AD187A9D3C00BFDE68 /* CaseResponseDTO.h in CopyFiles */,
+				612D21AE187A9D3C00BFDE68 /* DoctorAchievementDTO.h in CopyFiles */,
+				612D21AF187A9D3C00BFDE68 /* DoctorDetail.h in CopyFiles */,
+				612D21B0187A9D3C00BFDE68 /* DoctorDTO.h in CopyFiles */,
+				612D21B1187A9D3C00BFDE68 /* DoctorExperienceDTO.h in CopyFiles */,
+				612D21B2187A9D3C00BFDE68 /* DoctorExpertiseDTO.h in CopyFiles */,
+				612D21B3187A9D3C00BFDE68 /* DoctorListAchievementDTO.h in CopyFiles */,
+				612D21B4187A9D3C00BFDE68 /* DoctorListExperienceDTO.h in CopyFiles */,
+				612D21B5187A9D3C00BFDE68 /* DoctorListExpertiseDTO.h in CopyFiles */,
+				612D21B6187A9D3C00BFDE68 /* DoctorListMembershipDTO.h in CopyFiles */,
+				612D21B7187A9D3C00BFDE68 /* DoctorListQualificationDTO.h in CopyFiles */,
+				612D21B8187A9D3C00BFDE68 /* DoctorListResponse.h in CopyFiles */,
+				612D21B9187A9D3C00BFDE68 /* DoctorLoginDTO.h in CopyFiles */,
+				612D21BA187A9D3C00BFDE68 /* DoctorMembershipDTO.h in CopyFiles */,
+				612D21BB187A9D3C00BFDE68 /* DoctorPersonalDTO.h in CopyFiles */,
+				612D21BC187A9D3C00BFDE68 /* DoctorQualificationDTO.h in CopyFiles */,
+				612D21BD187A9D3C00BFDE68 /* DoctorResponse.h in CopyFiles */,
+				612D21BE187A9D3C00BFDE68 /* DoctorScheduleTimeDTO.h in CopyFiles */,
+				612D21BF187A9D3C00BFDE68 /* ErrorCodeListResponseDTO.h in CopyFiles */,
+				612D21C0187A9D3C00BFDE68 /* ErrorDTO.h in CopyFiles */,
+				612D21C1187A9D3C00BFDE68 /* Errors.h in CopyFiles */,
+				612D21C2187A9D3C00BFDE68 /* Expression.h in CopyFiles */,
+				612D21C3187A9D3C00BFDE68 /* Filter.h in CopyFiles */,
+				612D21C4187A9D3C00BFDE68 /* HeaderDTO.h in CopyFiles */,
+				612D21C5187A9D3C00BFDE68 /* HeaderResponseDTO.h in CopyFiles */,
+				612D21C6187A9D3C00BFDE68 /* LoginDTO.h in CopyFiles */,
+				612D21C7187A9D3C00BFDE68 /* LoginResponseDTO.h in CopyFiles */,
+				612D21C8187A9D3C00BFDE68 /* MedicalListResponseDTO.h in CopyFiles */,
+				612D21C9187A9D3C00BFDE68 /* MedicalRecordDTO.h in CopyFiles */,
+				612D21CA187A9D3C00BFDE68 /* MessageDTO.h in CopyFiles */,
+				612D21CB187A9D3C00BFDE68 /* MessageListResponse.h in CopyFiles */,
+				612D21CC187A9D3C00BFDE68 /* NetMdActivationResponseDTO.h in CopyFiles */,
+				612D21CD187A9D3C00BFDE68 /* NetMdBranchDTO.h in CopyFiles */,
+				612D21CE187A9D3C00BFDE68 /* NetMdDTO.h in CopyFiles */,
+				612D21CF187A9D3C00BFDE68 /* NetMdResponseDTO.h in CopyFiles */,
+				612D21D0187A9D3C00BFDE68 /* NetMdUserDetail.h in CopyFiles */,
+				612D21D1187A9D3C00BFDE68 /* NetMdUserDTO.h in CopyFiles */,
+				612D21D2187A9D3C00BFDE68 /* OwnerDetailDTO.h in CopyFiles */,
+				612D21D3187A9D3C00BFDE68 /* Parameter.h in CopyFiles */,
+				612D21D4187A9D3C00BFDE68 /* PassPhraseDTO.h in CopyFiles */,
+				612D21D5187A9D3C00BFDE68 /* PatientDetail.h in CopyFiles */,
+				612D21D6187A9D3C00BFDE68 /* PatientListResponseDTO.h in CopyFiles */,
+				612D21D7187A9D3C00BFDE68 /* PatientMedicalHistoryDTO.h in CopyFiles */,
+				612D21D8187A9D3C00BFDE68 /* PatientResponse.h in CopyFiles */,
+				612D21D9187A9D3C00BFDE68 /* ReferralDetails.h in CopyFiles */,
+				612D21DA187A9D3C00BFDE68 /* ResponseDTO.h in CopyFiles */,
+				612D21DB187A9D3C00BFDE68 /* ResultListResponseDTO.h in CopyFiles */,
+				612D21DC187A9D3C00BFDE68 /* RetrievalAppointmentResponseDTO.h in CopyFiles */,
+				612D21DD187A9D3C00BFDE68 /* RetrievalPatientResponseDTO.h in CopyFiles */,
+				612D21DE187A9D3C00BFDE68 /* RetrievalScheduleResponseDTO.h in CopyFiles */,
+				612D21DF187A9D3C00BFDE68 /* RetrievalUserResponseDTO.h in CopyFiles */,
+				612D21E0187A9D3C00BFDE68 /* RetrievealDoctorResponseDTO.h in CopyFiles */,
+				612D21E1187A9D3C00BFDE68 /* RetrieveResultsResponseDTO.h in CopyFiles */,
+				612D21E2187A9D3C00BFDE68 /* ScheduleDetail.h in CopyFiles */,
+				612D21E3187A9D3C00BFDE68 /* ScheduleDTO.h in CopyFiles */,
+				612D21E4187A9D3C00BFDE68 /* ScheduleListDTO.h in CopyFiles */,
+				612D21E5187A9D3C00BFDE68 /* ScheduleResponse.h in CopyFiles */,
+				612D21E6187A9D3C00BFDE68 /* SeriesDTO.h in CopyFiles */,
+				612D21E8187A9D3C00BFDE68 /* SyncResponseDTO.h in CopyFiles */,
+				612D21E9187A9D3C00BFDE68 /* User.h in CopyFiles */,
+				612D21EA187A9D3C00BFDE68 /* UserDetails.h in CopyFiles */,
+				612D21EB187A9D3C00BFDE68 /* UserDTO.h in CopyFiles */,
+				612D21EC187A9D3C00BFDE68 /* UserInfoDetail.h in CopyFiles */,
+				612D21ED187A9D3C00BFDE68 /* UserResponse.h in CopyFiles */,
+				612D21EE187A9D3C00BFDE68 /* ViewDoctorDTO.h in CopyFiles */,
+				612D21EF187A9D3C00BFDE68 /* ViewResultDTO.h in CopyFiles */,
+				612D21F0187A9D3C00BFDE68 /* ViewResultResponseDTO.h in CopyFiles */,
+				612D21F1187A9D3C00BFDE68 /* ViewScheduleDTO.h in CopyFiles */,
+				612D21F2187A9D3C00BFDE68 /* ViewScheduleListDTO.h in CopyFiles */,
+				612D21F3187A9D3C00BFDE68 /* DoctorDao.h in CopyFiles */,
+				612D21F4187A9D3C00BFDE68 /* AppointmentDao.h in CopyFiles */,
+				612D1F73187A9C2900BFDE68 /* NewNetMdBL.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6105006C188F9ADC0033A7CF /* OwnerDao.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OwnerDao.h; sourceTree = "<group>"; };
+		6105006D188F9BF10033A7CF /* OwnerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OwnerService.h; sourceTree = "<group>"; };
+		6105006E188F9BF10033A7CF /* OwnerService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OwnerService.m; sourceTree = "<group>"; };
+		612D1F6A187A9C2900BFDE68 /* libNewNetMdBL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNewNetMdBL.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		612D1F6D187A9C2900BFDE68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		612D1F71187A9C2900BFDE68 /* NewNetMdBL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewNetMdBL-Prefix.pch"; sourceTree = "<group>"; };
+		612D1F72187A9C2900BFDE68 /* NewNetMdBL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewNetMdBL.h; sourceTree = "<group>"; };
+		612D1F74187A9C2900BFDE68 /* NewNetMdBL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewNetMdBL.m; sourceTree = "<group>"; };
+		612D1F7A187A9C2900BFDE68 /* NewNetMdBLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewNetMdBLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		612D1F7B187A9C2900BFDE68 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		612D1F7E187A9C2900BFDE68 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		612D1F85187A9C2900BFDE68 /* NewNetMdBLTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewNetMdBLTests-Info.plist"; sourceTree = "<group>"; };
+		612D1F87187A9C2900BFDE68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		612D1F89187A9C2900BFDE68 /* NewNetMdBLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewNetMdBLTests.m; sourceTree = "<group>"; };
+		612D2047187A9C6A00BFDE68 /* DoctorValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorValidator.h; sourceTree = "<group>"; };
+		612D2048187A9C6A00BFDE68 /* DoctorValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorValidator.m; sourceTree = "<group>"; };
+		612D204A187A9C6A00BFDE68 /* AppointmentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentService.h; sourceTree = "<group>"; };
+		612D204B187A9C6A00BFDE68 /* AppointmentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentService.m; sourceTree = "<group>"; };
+		612D204C187A9C6A00BFDE68 /* DoctorService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorService.h; sourceTree = "<group>"; };
+		612D204D187A9C6A00BFDE68 /* DoctorService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorService.m; sourceTree = "<group>"; };
+		612D204E187A9C6A00BFDE68 /* LoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginService.h; sourceTree = "<group>"; };
+		612D204F187A9C6A00BFDE68 /* LoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginService.m; sourceTree = "<group>"; };
+		612D2050187A9C6A00BFDE68 /* MessageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageService.h; sourceTree = "<group>"; };
+		612D2051187A9C6A00BFDE68 /* MessageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageService.m; sourceTree = "<group>"; };
+		612D2052187A9C6A00BFDE68 /* PatientService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientService.h; sourceTree = "<group>"; };
+		612D2053187A9C6A00BFDE68 /* PatientService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientService.m; sourceTree = "<group>"; };
+		612D2054187A9C6A00BFDE68 /* ScheduleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleService.h; sourceTree = "<group>"; };
+		612D2055187A9C6A00BFDE68 /* ScheduleService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleService.m; sourceTree = "<group>"; };
+		612D2056187A9C6A00BFDE68 /* ServerCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerCall.h; sourceTree = "<group>"; };
+		612D2057187A9C6A00BFDE68 /* ServerCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerCall.m; sourceTree = "<group>"; };
+		612D2058187A9C6A00BFDE68 /* ScheduleDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleDao.h; sourceTree = "<group>"; };
+		612D2059187A9C6A00BFDE68 /* PatientDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientDao.h; sourceTree = "<group>"; };
+		612D205A187A9C6A00BFDE68 /* MessageDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDao.h; sourceTree = "<group>"; };
+		612D205B187A9C6A00BFDE68 /* LoginDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginDao.h; sourceTree = "<group>"; };
+		612D205D187A9C6A00BFDE68 /* AppointmentDetailsDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentDetailsDTO.h; sourceTree = "<group>"; };
+		612D205E187A9C6A00BFDE68 /* AppointmentDetailsDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentDetailsDTO.m; sourceTree = "<group>"; };
+		612D205F187A9C6A00BFDE68 /* AppointmentDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentDTO.h; sourceTree = "<group>"; };
+		612D2060187A9C6A00BFDE68 /* AppointmentDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentDTO.m; sourceTree = "<group>"; };
+		612D2061187A9C6A00BFDE68 /* AppointmentListResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentListResponseDTO.h; sourceTree = "<group>"; };
+		612D2062187A9C6A00BFDE68 /* AppointmentListResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentListResponseDTO.m; sourceTree = "<group>"; };
+		612D2063187A9C6A00BFDE68 /* CaseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaseDTO.h; sourceTree = "<group>"; };
+		612D2064187A9C6A00BFDE68 /* CaseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaseDTO.m; sourceTree = "<group>"; };
+		612D2065187A9C6A00BFDE68 /* CaseListResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaseListResponseDTO.h; sourceTree = "<group>"; };
+		612D2066187A9C6A00BFDE68 /* CaseListResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaseListResponseDTO.m; sourceTree = "<group>"; };
+		612D2067187A9C6A00BFDE68 /* CaseResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaseResponseDTO.h; sourceTree = "<group>"; };
+		612D2068187A9C6A00BFDE68 /* CaseResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaseResponseDTO.m; sourceTree = "<group>"; };
+		612D2069187A9C6A00BFDE68 /* DoctorAchievementDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorAchievementDTO.h; sourceTree = "<group>"; };
+		612D206A187A9C6A00BFDE68 /* DoctorAchievementDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorAchievementDTO.m; sourceTree = "<group>"; };
+		612D206B187A9C6A00BFDE68 /* DoctorDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorDetail.h; sourceTree = "<group>"; };
+		612D206C187A9C6A00BFDE68 /* DoctorDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorDetail.m; sourceTree = "<group>"; };
+		612D206D187A9C6A00BFDE68 /* DoctorDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorDTO.h; sourceTree = "<group>"; };
+		612D206E187A9C6A00BFDE68 /* DoctorDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorDTO.m; sourceTree = "<group>"; };
+		612D206F187A9C6A00BFDE68 /* DoctorExperienceDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorExperienceDTO.h; sourceTree = "<group>"; };
+		612D2070187A9C6A00BFDE68 /* DoctorExperienceDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorExperienceDTO.m; sourceTree = "<group>"; };
+		612D2071187A9C6A00BFDE68 /* DoctorExpertiseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorExpertiseDTO.h; sourceTree = "<group>"; };
+		612D2072187A9C6A00BFDE68 /* DoctorExpertiseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorExpertiseDTO.m; sourceTree = "<group>"; };
+		612D2073187A9C6A00BFDE68 /* DoctorListAchievementDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorListAchievementDTO.h; sourceTree = "<group>"; };
+		612D2074187A9C6A00BFDE68 /* DoctorListAchievementDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorListAchievementDTO.m; sourceTree = "<group>"; };
+		612D2075187A9C6A00BFDE68 /* DoctorListExperienceDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorListExperienceDTO.h; sourceTree = "<group>"; };
+		612D2076187A9C6A00BFDE68 /* DoctorListExperienceDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorListExperienceDTO.m; sourceTree = "<group>"; };
+		612D2077187A9C6A00BFDE68 /* DoctorListExpertiseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorListExpertiseDTO.h; sourceTree = "<group>"; };
+		612D2078187A9C6A00BFDE68 /* DoctorListExpertiseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorListExpertiseDTO.m; sourceTree = "<group>"; };
+		612D2079187A9C6A00BFDE68 /* DoctorListMembershipDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorListMembershipDTO.h; sourceTree = "<group>"; };
+		612D207A187A9C6A00BFDE68 /* DoctorListMembershipDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorListMembershipDTO.m; sourceTree = "<group>"; };
+		612D207B187A9C6A00BFDE68 /* DoctorListQualificationDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorListQualificationDTO.h; sourceTree = "<group>"; };
+		612D207C187A9C6A00BFDE68 /* DoctorListQualificationDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorListQualificationDTO.m; sourceTree = "<group>"; };
+		612D207D187A9C6A00BFDE68 /* DoctorListResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorListResponse.h; sourceTree = "<group>"; };
+		612D207E187A9C6A00BFDE68 /* DoctorListResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorListResponse.m; sourceTree = "<group>"; };
+		612D207F187A9C6A00BFDE68 /* DoctorLoginDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorLoginDTO.h; sourceTree = "<group>"; };
+		612D2080187A9C6A00BFDE68 /* DoctorLoginDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorLoginDTO.m; sourceTree = "<group>"; };
+		612D2081187A9C6A00BFDE68 /* DoctorMembership.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorMembership.m; sourceTree = "<group>"; };
+		612D2082187A9C6A00BFDE68 /* DoctorMembershipDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorMembershipDTO.h; sourceTree = "<group>"; };
+		612D2083187A9C6A00BFDE68 /* DoctorPersonalDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorPersonalDTO.h; sourceTree = "<group>"; };
+		612D2084187A9C6A00BFDE68 /* DoctorPersonalDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorPersonalDTO.m; sourceTree = "<group>"; };
+		612D2085187A9C6A00BFDE68 /* DoctorQualificationDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorQualificationDTO.h; sourceTree = "<group>"; };
+		612D2086187A9C6A00BFDE68 /* DoctorQualificationDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorQualificationDTO.m; sourceTree = "<group>"; };
+		612D2087187A9C6A00BFDE68 /* DoctorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorResponse.h; sourceTree = "<group>"; };
+		612D2088187A9C6A00BFDE68 /* DoctorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorResponse.m; sourceTree = "<group>"; };
+		612D2089187A9C6A00BFDE68 /* DoctorScheduleTimeDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorScheduleTimeDTO.h; sourceTree = "<group>"; };
+		612D208A187A9C6A00BFDE68 /* DoctorScheduleTimeDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorScheduleTimeDTO.m; sourceTree = "<group>"; };
+		612D208B187A9C6A00BFDE68 /* ErrorCodeListResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorCodeListResponseDTO.h; sourceTree = "<group>"; };
+		612D208C187A9C6A00BFDE68 /* ErrorCodeListResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorCodeListResponseDTO.m; sourceTree = "<group>"; };
+		612D208D187A9C6A00BFDE68 /* ErrorDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorDTO.h; sourceTree = "<group>"; };
+		612D208E187A9C6A00BFDE68 /* ErrorDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorDTO.m; sourceTree = "<group>"; };
+		612D208F187A9C6A00BFDE68 /* Errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Errors.h; sourceTree = "<group>"; };
+		612D2090187A9C6A00BFDE68 /* Errors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Errors.m; sourceTree = "<group>"; };
+		612D2091187A9C6A00BFDE68 /* Expression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Expression.h; sourceTree = "<group>"; };
+		612D2092187A9C6A00BFDE68 /* Expression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Expression.m; sourceTree = "<group>"; };
+		612D2093187A9C6A00BFDE68 /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
+		612D2094187A9C6A00BFDE68 /* Filter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filter.m; sourceTree = "<group>"; };
+		612D2095187A9C6A00BFDE68 /* HeaderDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderDTO.h; sourceTree = "<group>"; };
+		612D2096187A9C6A00BFDE68 /* HeaderDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderDTO.m; sourceTree = "<group>"; };
+		612D2097187A9C6A00BFDE68 /* HeaderResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderResponseDTO.h; sourceTree = "<group>"; };
+		612D2098187A9C6A00BFDE68 /* HeaderResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderResponseDTO.m; sourceTree = "<group>"; };
+		612D2099187A9C6A00BFDE68 /* LoginDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginDTO.h; sourceTree = "<group>"; };
+		612D209A187A9C6A00BFDE68 /* LoginDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginDTO.m; sourceTree = "<group>"; };
+		612D209B187A9C6A00BFDE68 /* LoginResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginResponseDTO.h; sourceTree = "<group>"; };
+		612D209C187A9C6A00BFDE68 /* LoginResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginResponseDTO.m; sourceTree = "<group>"; };
+		612D209D187A9C6A00BFDE68 /* MedicalListResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicalListResponseDTO.h; sourceTree = "<group>"; };
+		612D209E187A9C6A00BFDE68 /* MedicalListResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicalListResponseDTO.m; sourceTree = "<group>"; };
+		612D209F187A9C6A00BFDE68 /* MedicalRecordDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicalRecordDTO.h; sourceTree = "<group>"; };
+		612D20A0187A9C6A00BFDE68 /* MedicalRecordDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicalRecordDTO.m; sourceTree = "<group>"; };
+		612D20A1187A9C6A00BFDE68 /* MessageDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDTO.h; sourceTree = "<group>"; };
+		612D20A2187A9C6A00BFDE68 /* MessageDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageDTO.m; sourceTree = "<group>"; };
+		612D20A3187A9C6A00BFDE68 /* MessageListResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageListResponse.h; sourceTree = "<group>"; };
+		612D20A4187A9C6A00BFDE68 /* MessageListResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageListResponse.m; sourceTree = "<group>"; };
+		612D20A5187A9C6A00BFDE68 /* NetMdActivationResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetMdActivationResponseDTO.h; sourceTree = "<group>"; };
+		612D20A6187A9C6A00BFDE68 /* NetMdActivationResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetMdActivationResponseDTO.m; sourceTree = "<group>"; };
+		612D20A7187A9C6A00BFDE68 /* NetMdBranchDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetMdBranchDTO.h; sourceTree = "<group>"; };
+		612D20A8187A9C6A00BFDE68 /* NetMdBranchDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetMdBranchDTO.m; sourceTree = "<group>"; };
+		612D20A9187A9C6A00BFDE68 /* NetMdDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetMdDTO.h; sourceTree = "<group>"; };
+		612D20AA187A9C6A00BFDE68 /* NetMdDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetMdDTO.m; sourceTree = "<group>"; };
+		612D20AB187A9C6A00BFDE68 /* NetMdResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetMdResponseDTO.h; sourceTree = "<group>"; };
+		612D20AC187A9C6A00BFDE68 /* NetMdResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetMdResponseDTO.m; sourceTree = "<group>"; };
+		612D20AD187A9C6A00BFDE68 /* NetMdUserDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetMdUserDetail.h; sourceTree = "<group>"; };
+		612D20AE187A9C6A00BFDE68 /* NetMdUserDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetMdUserDetail.m; sourceTree = "<group>"; };
+		612D20AF187A9C6A00BFDE68 /* NetMdUserDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetMdUserDTO.h; sourceTree = "<group>"; };
+		612D20B0187A9C6A00BFDE68 /* NetMdUserDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetMdUserDTO.m; sourceTree = "<group>"; };
+		612D20B1187A9C6A00BFDE68 /* OwnerDetailDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OwnerDetailDTO.h; sourceTree = "<group>"; };
+		612D20B2187A9C6B00BFDE68 /* OwnerDetailDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OwnerDetailDTO.m; sourceTree = "<group>"; };
+		612D20B3187A9C6B00BFDE68 /* Parameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parameter.h; sourceTree = "<group>"; };
+		612D20B4187A9C6B00BFDE68 /* Parameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parameter.m; sourceTree = "<group>"; };
+		612D20B5187A9C6B00BFDE68 /* PassPhraseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassPhraseDTO.h; sourceTree = "<group>"; };
+		612D20B6187A9C6B00BFDE68 /* PassPhraseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassPhraseDTO.m; sourceTree = "<group>"; };
+		612D20B7187A9C6B00BFDE68 /* PatientDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientDetail.h; sourceTree = "<group>"; };
+		612D20B8187A9C6B00BFDE68 /* PatientDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientDetail.m; sourceTree = "<group>"; };
+		612D20B9187A9C6B00BFDE68 /* PatientListResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientListResponseDTO.h; sourceTree = "<group>"; };
+		612D20BA187A9C6B00BFDE68 /* PatientListResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientListResponseDTO.m; sourceTree = "<group>"; };
+		612D20BB187A9C6B00BFDE68 /* PatientMedicalHistoryDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientMedicalHistoryDTO.h; sourceTree = "<group>"; };
+		612D20BC187A9C6B00BFDE68 /* PatientMedicalHistoryDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientMedicalHistoryDTO.m; sourceTree = "<group>"; };
+		612D20BD187A9C6B00BFDE68 /* PatientResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientResponse.h; sourceTree = "<group>"; };
+		612D20BE187A9C6B00BFDE68 /* PatientResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientResponse.m; sourceTree = "<group>"; };
+		612D20BF187A9C6B00BFDE68 /* ReferralDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferralDetails.h; sourceTree = "<group>"; };
+		612D20C0187A9C6B00BFDE68 /* ReferralDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferralDetails.m; sourceTree = "<group>"; };
+		612D20C1187A9C6B00BFDE68 /* ResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseDTO.h; sourceTree = "<group>"; };
+		612D20C2187A9C6B00BFDE68 /* ResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseDTO.m; sourceTree = "<group>"; };
+		612D20C3187A9C6B00BFDE68 /* ResultListResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultListResponseDTO.h; sourceTree = "<group>"; };
+		612D20C4187A9C6B00BFDE68 /* ResultListResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultListResponseDTO.m; sourceTree = "<group>"; };
+		612D20C5187A9C6B00BFDE68 /* RetrievalAppointmentResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetrievalAppointmentResponseDTO.h; sourceTree = "<group>"; };
+		612D20C6187A9C6B00BFDE68 /* RetrievalAppointmentResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetrievalAppointmentResponseDTO.m; sourceTree = "<group>"; };
+		612D20C7187A9C6B00BFDE68 /* RetrievalPatientResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetrievalPatientResponseDTO.h; sourceTree = "<group>"; };
+		612D20C8187A9C6B00BFDE68 /* RetrievalPatientResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetrievalPatientResponseDTO.m; sourceTree = "<group>"; };
+		612D20C9187A9C6B00BFDE68 /* RetrievalScheduleResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetrievalScheduleResponseDTO.h; sourceTree = "<group>"; };
+		612D20CA187A9C6B00BFDE68 /* RetrievalScheduleResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetrievalScheduleResponseDTO.m; sourceTree = "<group>"; };
+		612D20CB187A9C6B00BFDE68 /* RetrievalUserResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetrievalUserResponseDTO.h; sourceTree = "<group>"; };
+		612D20CC187A9C6B00BFDE68 /* RetrievalUserResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetrievalUserResponseDTO.m; sourceTree = "<group>"; };
+		612D20CD187A9C6B00BFDE68 /* RetrievealDoctorResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetrievealDoctorResponseDTO.h; sourceTree = "<group>"; };
+		612D20CE187A9C6B00BFDE68 /* RetrievealDoctorResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetrievealDoctorResponseDTO.m; sourceTree = "<group>"; };
+		612D20CF187A9C6B00BFDE68 /* RetrieveResultsResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetrieveResultsResponseDTO.h; sourceTree = "<group>"; };
+		612D20D0187A9C6B00BFDE68 /* RetrieveResultsResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetrieveResultsResponseDTO.m; sourceTree = "<group>"; };
+		612D20D1187A9C6B00BFDE68 /* ScheduleDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleDetail.h; sourceTree = "<group>"; };
+		612D20D2187A9C6B00BFDE68 /* ScheduleDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleDetail.m; sourceTree = "<group>"; };
+		612D20D3187A9C6B00BFDE68 /* ScheduleDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleDTO.h; sourceTree = "<group>"; };
+		612D20D4187A9C6B00BFDE68 /* ScheduleDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleDTO.m; sourceTree = "<group>"; };
+		612D20D5187A9C6B00BFDE68 /* ScheduleListDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleListDTO.h; sourceTree = "<group>"; };
+		612D20D6187A9C6B00BFDE68 /* ScheduleListDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleListDTO.m; sourceTree = "<group>"; };
+		612D20D7187A9C6B00BFDE68 /* ScheduleResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleResponse.h; sourceTree = "<group>"; };
+		612D20D8187A9C6B00BFDE68 /* ScheduleResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleResponse.m; sourceTree = "<group>"; };
+		612D20D9187A9C6B00BFDE68 /* SeriesDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeriesDTO.h; sourceTree = "<group>"; };
+		612D20DA187A9C6B00BFDE68 /* SeriesDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeriesDTO.m; sourceTree = "<group>"; };
+		612D20DD187A9C6B00BFDE68 /* SyncResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncResponseDTO.h; sourceTree = "<group>"; };
+		612D20DE187A9C6B00BFDE68 /* SyncResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncResponseDTO.m; sourceTree = "<group>"; };
+		612D20DF187A9C6B00BFDE68 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		612D20E0187A9C6B00BFDE68 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		612D20E1187A9C6B00BFDE68 /* UserDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDetails.h; sourceTree = "<group>"; };
+		612D20E2187A9C6B00BFDE68 /* UserDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDetails.m; sourceTree = "<group>"; };
+		612D20E3187A9C6B00BFDE68 /* UserDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDTO.h; sourceTree = "<group>"; };
+		612D20E4187A9C6B00BFDE68 /* UserDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDTO.m; sourceTree = "<group>"; };
+		612D20E5187A9C6B00BFDE68 /* UserInfoDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoDetail.h; sourceTree = "<group>"; };
+		612D20E6187A9C6B00BFDE68 /* UserInfoDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoDetail.m; sourceTree = "<group>"; };
+		612D20E7187A9C6B00BFDE68 /* UserResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserResponse.h; sourceTree = "<group>"; };
+		612D20E8187A9C6B00BFDE68 /* UserResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserResponse.m; sourceTree = "<group>"; };
+		612D20E9187A9C6B00BFDE68 /* ViewDoctorDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewDoctorDTO.h; sourceTree = "<group>"; };
+		612D20EA187A9C6B00BFDE68 /* ViewDoctorDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewDoctorDTO.m; sourceTree = "<group>"; };
+		612D20EB187A9C6B00BFDE68 /* ViewResultDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewResultDTO.h; sourceTree = "<group>"; };
+		612D20EC187A9C6B00BFDE68 /* ViewResultDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewResultDTO.m; sourceTree = "<group>"; };
+		612D20ED187A9C6B00BFDE68 /* ViewResultResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewResultResponseDTO.h; sourceTree = "<group>"; };
+		612D20EE187A9C6B00BFDE68 /* ViewResultResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewResultResponseDTO.m; sourceTree = "<group>"; };
+		612D20EF187A9C6B00BFDE68 /* ViewScheduleDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewScheduleDTO.h; sourceTree = "<group>"; };
+		612D20F0187A9C6B00BFDE68 /* ViewScheduleDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewScheduleDTO.m; sourceTree = "<group>"; };
+		612D20F1187A9C6B00BFDE68 /* ViewScheduleListDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewScheduleListDTO.h; sourceTree = "<group>"; };
+		612D20F2187A9C6B00BFDE68 /* ViewScheduleListDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewScheduleListDTO.m; sourceTree = "<group>"; };
+		612D20F3187A9C6B00BFDE68 /* DoctorDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorDao.h; sourceTree = "<group>"; };
+		612D20F4187A9C6B00BFDE68 /* AppointmentDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentDao.h; sourceTree = "<group>"; };
+		612D21FB187AA08600BFDE68 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		612D21FE187AA08600BFDE68 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8A5B270A1A970DBB00727B7B /* RecurringTimeSlotDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecurringTimeSlotDTO.h; sourceTree = "<group>"; };
+		8A5B270B1A970DBB00727B7B /* RecurringTimeSlotDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecurringTimeSlotDTO.m; sourceTree = "<group>"; };
+		8A90D33A1A22FD2900D3598F /* SyncablePojo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncablePojo.h; sourceTree = "<group>"; };
+		8A90D33B1A22FD2900D3598F /* SyncablePojo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncablePojo.m; sourceTree = "<group>"; };
+		8A90D3881A23047300D3598F /* SourceLocale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SourceLocale.h; sourceTree = "<group>"; };
+		8A90D3891A23047300D3598F /* SourceLocale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SourceLocale.m; sourceTree = "<group>"; };
+		8A91975C1A26F1C10079CFBA /* DesLocale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesLocale.h; sourceTree = "<group>"; };
+		8A91975D1A26F1C10079CFBA /* DesLocale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesLocale.m; sourceTree = "<group>"; };
+		8A9498A81923443F000CB353 /* ServerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerService.h; sourceTree = "<group>"; };
+		8A9498A91923443F000CB353 /* ServerService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerService.m; sourceTree = "<group>"; };
+		8A9498AE19234597000CB353 /* ServiceDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceDao.h; sourceTree = "<group>"; };
+		8A95ACF81887948800787337 /* CurrentUserDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentUserDTO.h; sourceTree = "<group>"; };
+		8A95ACF91887948800787337 /* CurrentUserDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentUserDTO.m; sourceTree = "<group>"; };
+		8A990D4F195D383B0004ADD2 /* CaseSyncResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaseSyncResponseDTO.h; sourceTree = "<group>"; };
+		8A990D50195D383B0004ADD2 /* CaseSyncResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaseSyncResponseDTO.m; sourceTree = "<group>"; };
+		8A990D52195D385C0004ADD2 /* MesicalRecordsSyncResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MesicalRecordsSyncResponseDTO.h; sourceTree = "<group>"; };
+		8A990D53195D385C0004ADD2 /* MesicalRecordsSyncResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MesicalRecordsSyncResponseDTO.m; sourceTree = "<group>"; };
+		8A9AC01819599219004C24B2 /* AppointmentResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentResponseDTO.h; sourceTree = "<group>"; };
+		8A9AC01919599219004C24B2 /* AppointmentResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentResponseDTO.m; sourceTree = "<group>"; };
+		8A9CF2D3199375EE00BF78EE /* AdminService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminService.h; sourceTree = "<group>"; };
+		8A9CF2D4199375EE00BF78EE /* AdminService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminService.m; sourceTree = "<group>"; };
+		8A9CF2D61993762100BF78EE /* AdminDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdminDao.h; path = Validator/AdminDao.h; sourceTree = "<group>"; };
+		8AA17351191B663D00F957AA /* SyncDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncDTO.h; sourceTree = "<group>"; };
+		8AA17352191B663D00F957AA /* SyncDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncDTO.m; sourceTree = "<group>"; };
+		8ABD383F1AA5A0400062A3A5 /* TimeSpecDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeSpecDTO.h; sourceTree = "<group>"; };
+		8ABD38401AA5A0400062A3A5 /* TimeSpecDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeSpecDTO.m; sourceTree = "<group>"; };
+		8AD1AABC1AB04AC200AAD93B /* ViewDocScheduleDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewDocScheduleDTO.h; sourceTree = "<group>"; };
+		8AD1AABD1AB04AC200AAD93B /* ViewDocScheduleDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewDocScheduleDTO.m; sourceTree = "<group>"; };
+		8AD2350F1AA0666200209C1A /* DocScheduleDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocScheduleDTO.h; sourceTree = "<group>"; };
+		8AD235101AA0666200209C1A /* DocScheduleDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocScheduleDTO.m; sourceTree = "<group>"; };
+		8AD5DB011ADF7CD80051E6CA /* VacationSpecDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VacationSpecDTO.h; sourceTree = "<group>"; };
+		8AD5DB021ADF7CD80051E6CA /* VacationSpecDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VacationSpecDTO.m; sourceTree = "<group>"; };
+		8AD5DB041ADF7D420051E6CA /* EmployeeVacation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeVacation.h; sourceTree = "<group>"; };
+		8AD5DB051ADF7D420051E6CA /* EmployeeVacation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeVacation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		612D1F67187A9C2900BFDE68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				612D1F6E187A9C2900BFDE68 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		612D1F77187A9C2900BFDE68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				612D1F7C187A9C2900BFDE68 /* XCTest.framework in Frameworks */,
+				612D1F82187A9C2900BFDE68 /* libNewNetMdBL.a in Frameworks */,
+				612D1F7F187A9C2900BFDE68 /* UIKit.framework in Frameworks */,
+				612D1F7D187A9C2900BFDE68 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		612D1F61187A9C2900BFDE68 = {
+			isa = PBXGroup;
+			children = (
+				612D1F6F187A9C2900BFDE68 /* NewNetMdBL */,
+				612D1F83187A9C2900BFDE68 /* NewNetMdBLTests */,
+				612D1F6C187A9C2900BFDE68 /* Frameworks */,
+				612D1F6B187A9C2900BFDE68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		612D1F6B187A9C2900BFDE68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				612D1F6A187A9C2900BFDE68 /* libNewNetMdBL.a */,
+				612D1F7A187A9C2900BFDE68 /* NewNetMdBLTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		612D1F6C187A9C2900BFDE68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				612D1F6D187A9C2900BFDE68 /* Foundation.framework */,
+				612D1F7B187A9C2900BFDE68 /* XCTest.framework */,
+				612D1F7E187A9C2900BFDE68 /* UIKit.framework */,
+				612D21FB187AA08600BFDE68 /* CoreGraphics.framework */,
+				612D21FE187AA08600BFDE68 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		612D1F6F187A9C2900BFDE68 /* NewNetMdBL */ = {
+			isa = PBXGroup;
+			children = (
+				612D2046187A9C6A00BFDE68 /* Validator */,
+				612D2058187A9C6A00BFDE68 /* ScheduleDao.h */,
+				612D2059187A9C6A00BFDE68 /* PatientDao.h */,
+				612D205A187A9C6A00BFDE68 /* MessageDao.h */,
+				612D205B187A9C6A00BFDE68 /* LoginDao.h */,
+				612D20F3187A9C6B00BFDE68 /* DoctorDao.h */,
+				612D20F4187A9C6B00BFDE68 /* AppointmentDao.h */,
+				6105006C188F9ADC0033A7CF /* OwnerDao.h */,
+				8A9498AE19234597000CB353 /* ServiceDao.h */,
+				8A9CF2D61993762100BF78EE /* AdminDao.h */,
+				612D205C187A9C6A00BFDE68 /* DTO */,
+				612D2049187A9C6A00BFDE68 /* Service */,
+				612D1F70187A9C2900BFDE68 /* Supporting Files */,
+			);
+			path = NewNetMdBL;
+			sourceTree = "<group>";
+		};
+		612D1F70187A9C2900BFDE68 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				612D1F72187A9C2900BFDE68 /* NewNetMdBL.h */,
+				612D1F74187A9C2900BFDE68 /* NewNetMdBL.m */,
+				612D1F71187A9C2900BFDE68 /* NewNetMdBL-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		612D1F83187A9C2900BFDE68 /* NewNetMdBLTests */ = {
+			isa = PBXGroup;
+			children = (
+				612D1F89187A9C2900BFDE68 /* NewNetMdBLTests.m */,
+				612D1F84187A9C2900BFDE68 /* Supporting Files */,
+			);
+			path = NewNetMdBLTests;
+			sourceTree = "<group>";
+		};
+		612D1F84187A9C2900BFDE68 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				612D1F85187A9C2900BFDE68 /* NewNetMdBLTests-Info.plist */,
+				612D1F86187A9C2900BFDE68 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		612D2046187A9C6A00BFDE68 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				612D2047187A9C6A00BFDE68 /* DoctorValidator.h */,
+				612D2048187A9C6A00BFDE68 /* DoctorValidator.m */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
+		612D2049187A9C6A00BFDE68 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				612D204A187A9C6A00BFDE68 /* AppointmentService.h */,
+				612D204B187A9C6A00BFDE68 /* AppointmentService.m */,
+				612D204C187A9C6A00BFDE68 /* DoctorService.h */,
+				612D204D187A9C6A00BFDE68 /* DoctorService.m */,
+				612D204E187A9C6A00BFDE68 /* LoginService.h */,
+				612D204F187A9C6A00BFDE68 /* LoginService.m */,
+				612D2050187A9C6A00BFDE68 /* MessageService.h */,
+				612D2051187A9C6A00BFDE68 /* MessageService.m */,
+				612D2052187A9C6A00BFDE68 /* PatientService.h */,
+				612D2053187A9C6A00BFDE68 /* PatientService.m */,
+				612D2054187A9C6A00BFDE68 /* ScheduleService.h */,
+				612D2055187A9C6A00BFDE68 /* ScheduleService.m */,
+				612D2056187A9C6A00BFDE68 /* ServerCall.h */,
+				612D2057187A9C6A00BFDE68 /* ServerCall.m */,
+				6105006D188F9BF10033A7CF /* OwnerService.h */,
+				6105006E188F9BF10033A7CF /* OwnerService.m */,
+				8A9498A81923443F000CB353 /* ServerService.h */,
+				8A9498A91923443F000CB353 /* ServerService.m */,
+				8A9CF2D3199375EE00BF78EE /* AdminService.h */,
+				8A9CF2D4199375EE00BF78EE /* AdminService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		612D205C187A9C6A00BFDE68 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				612D205D187A9C6A00BFDE68 /* AppointmentDetailsDTO.h */,
+				612D205E187A9C6A00BFDE68 /* AppointmentDetailsDTO.m */,
+				612D205F187A9C6A00BFDE68 /* AppointmentDTO.h */,
+				612D2060187A9C6A00BFDE68 /* AppointmentDTO.m */,
+				612D2061187A9C6A00BFDE68 /* AppointmentListResponseDTO.h */,
+				612D2062187A9C6A00BFDE68 /* AppointmentListResponseDTO.m */,
+				8A9AC01819599219004C24B2 /* AppointmentResponseDTO.h */,
+				8A9AC01919599219004C24B2 /* AppointmentResponseDTO.m */,
+				612D2063187A9C6A00BFDE68 /* CaseDTO.h */,
+				612D2064187A9C6A00BFDE68 /* CaseDTO.m */,
+				612D2065187A9C6A00BFDE68 /* CaseListResponseDTO.h */,
+				612D2066187A9C6A00BFDE68 /* CaseListResponseDTO.m */,
+				612D2067187A9C6A00BFDE68 /* CaseResponseDTO.h */,
+				612D2068187A9C6A00BFDE68 /* CaseResponseDTO.m */,
+				612D2069187A9C6A00BFDE68 /* DoctorAchievementDTO.h */,
+				612D206A187A9C6A00BFDE68 /* DoctorAchievementDTO.m */,
+				612D206B187A9C6A00BFDE68 /* DoctorDetail.h */,
+				612D206C187A9C6A00BFDE68 /* DoctorDetail.m */,
+				612D206D187A9C6A00BFDE68 /* DoctorDTO.h */,
+				612D206E187A9C6A00BFDE68 /* DoctorDTO.m */,
+				612D206F187A9C6A00BFDE68 /* DoctorExperienceDTO.h */,
+				612D2070187A9C6A00BFDE68 /* DoctorExperienceDTO.m */,
+				612D2071187A9C6A00BFDE68 /* DoctorExpertiseDTO.h */,
+				612D2072187A9C6A00BFDE68 /* DoctorExpertiseDTO.m */,
+				612D2073187A9C6A00BFDE68 /* DoctorListAchievementDTO.h */,
+				612D2074187A9C6A00BFDE68 /* DoctorListAchievementDTO.m */,
+				612D2075187A9C6A00BFDE68 /* DoctorListExperienceDTO.h */,
+				612D2076187A9C6A00BFDE68 /* DoctorListExperienceDTO.m */,
+				612D2077187A9C6A00BFDE68 /* DoctorListExpertiseDTO.h */,
+				612D2078187A9C6A00BFDE68 /* DoctorListExpertiseDTO.m */,
+				612D2079187A9C6A00BFDE68 /* DoctorListMembershipDTO.h */,
+				612D207A187A9C6A00BFDE68 /* DoctorListMembershipDTO.m */,
+				612D207B187A9C6A00BFDE68 /* DoctorListQualificationDTO.h */,
+				612D207C187A9C6A00BFDE68 /* DoctorListQualificationDTO.m */,
+				612D207D187A9C6A00BFDE68 /* DoctorListResponse.h */,
+				612D207E187A9C6A00BFDE68 /* DoctorListResponse.m */,
+				612D207F187A9C6A00BFDE68 /* DoctorLoginDTO.h */,
+				612D2080187A9C6A00BFDE68 /* DoctorLoginDTO.m */,
+				612D2081187A9C6A00BFDE68 /* DoctorMembership.m */,
+				612D2082187A9C6A00BFDE68 /* DoctorMembershipDTO.h */,
+				612D2083187A9C6A00BFDE68 /* DoctorPersonalDTO.h */,
+				612D2084187A9C6A00BFDE68 /* DoctorPersonalDTO.m */,
+				612D2085187A9C6A00BFDE68 /* DoctorQualificationDTO.h */,
+				612D2086187A9C6A00BFDE68 /* DoctorQualificationDTO.m */,
+				612D2087187A9C6A00BFDE68 /* DoctorResponse.h */,
+				612D2088187A9C6A00BFDE68 /* DoctorResponse.m */,
+				612D2089187A9C6A00BFDE68 /* DoctorScheduleTimeDTO.h */,
+				612D208A187A9C6A00BFDE68 /* DoctorScheduleTimeDTO.m */,
+				612D208B187A9C6A00BFDE68 /* ErrorCodeListResponseDTO.h */,
+				612D208C187A9C6A00BFDE68 /* ErrorCodeListResponseDTO.m */,
+				612D208D187A9C6A00BFDE68 /* ErrorDTO.h */,
+				612D208E187A9C6A00BFDE68 /* ErrorDTO.m */,
+				612D208F187A9C6A00BFDE68 /* Errors.h */,
+				612D2090187A9C6A00BFDE68 /* Errors.m */,
+				612D2091187A9C6A00BFDE68 /* Expression.h */,
+				612D2092187A9C6A00BFDE68 /* Expression.m */,
+				612D2093187A9C6A00BFDE68 /* Filter.h */,
+				612D2094187A9C6A00BFDE68 /* Filter.m */,
+				612D2095187A9C6A00BFDE68 /* HeaderDTO.h */,
+				612D2096187A9C6A00BFDE68 /* HeaderDTO.m */,
+				612D2097187A9C6A00BFDE68 /* HeaderResponseDTO.h */,
+				612D2098187A9C6A00BFDE68 /* HeaderResponseDTO.m */,
+				612D2099187A9C6A00BFDE68 /* LoginDTO.h */,
+				612D209A187A9C6A00BFDE68 /* LoginDTO.m */,
+				612D209B187A9C6A00BFDE68 /* LoginResponseDTO.h */,
+				612D209C187A9C6A00BFDE68 /* LoginResponseDTO.m */,
+				612D209D187A9C6A00BFDE68 /* MedicalListResponseDTO.h */,
+				612D209E187A9C6A00BFDE68 /* MedicalListResponseDTO.m */,
+				612D209F187A9C6A00BFDE68 /* MedicalRecordDTO.h */,
+				612D20A0187A9C6A00BFDE68 /* MedicalRecordDTO.m */,
+				612D20A1187A9C6A00BFDE68 /* MessageDTO.h */,
+				612D20A2187A9C6A00BFDE68 /* MessageDTO.m */,
+				612D20A3187A9C6A00BFDE68 /* MessageListResponse.h */,
+				612D20A4187A9C6A00BFDE68 /* MessageListResponse.m */,
+				612D20A5187A9C6A00BFDE68 /* NetMdActivationResponseDTO.h */,
+				612D20A6187A9C6A00BFDE68 /* NetMdActivationResponseDTO.m */,
+				612D20A7187A9C6A00BFDE68 /* NetMdBranchDTO.h */,
+				612D20A8187A9C6A00BFDE68 /* NetMdBranchDTO.m */,
+				612D20A9187A9C6A00BFDE68 /* NetMdDTO.h */,
+				612D20AA187A9C6A00BFDE68 /* NetMdDTO.m */,
+				612D20AB187A9C6A00BFDE68 /* NetMdResponseDTO.h */,
+				612D20AC187A9C6A00BFDE68 /* NetMdResponseDTO.m */,
+				612D20AD187A9C6A00BFDE68 /* NetMdUserDetail.h */,
+				612D20AE187A9C6A00BFDE68 /* NetMdUserDetail.m */,
+				612D20AF187A9C6A00BFDE68 /* NetMdUserDTO.h */,
+				612D20B0187A9C6A00BFDE68 /* NetMdUserDTO.m */,
+				612D20B1187A9C6A00BFDE68 /* OwnerDetailDTO.h */,
+				612D20B2187A9C6B00BFDE68 /* OwnerDetailDTO.m */,
+				612D20B3187A9C6B00BFDE68 /* Parameter.h */,
+				612D20B4187A9C6B00BFDE68 /* Parameter.m */,
+				612D20B5187A9C6B00BFDE68 /* PassPhraseDTO.h */,
+				612D20B6187A9C6B00BFDE68 /* PassPhraseDTO.m */,
+				612D20B7187A9C6B00BFDE68 /* PatientDetail.h */,
+				612D20B8187A9C6B00BFDE68 /* PatientDetail.m */,
+				612D20B9187A9C6B00BFDE68 /* PatientListResponseDTO.h */,
+				612D20BA187A9C6B00BFDE68 /* PatientListResponseDTO.m */,
+				612D20BB187A9C6B00BFDE68 /* PatientMedicalHistoryDTO.h */,
+				612D20BC187A9C6B00BFDE68 /* PatientMedicalHistoryDTO.m */,
+				612D20BD187A9C6B00BFDE68 /* PatientResponse.h */,
+				612D20BE187A9C6B00BFDE68 /* PatientResponse.m */,
+				612D20BF187A9C6B00BFDE68 /* ReferralDetails.h */,
+				612D20C0187A9C6B00BFDE68 /* ReferralDetails.m */,
+				612D20C1187A9C6B00BFDE68 /* ResponseDTO.h */,
+				612D20C2187A9C6B00BFDE68 /* ResponseDTO.m */,
+				612D20C3187A9C6B00BFDE68 /* ResultListResponseDTO.h */,
+				612D20C4187A9C6B00BFDE68 /* ResultListResponseDTO.m */,
+				612D20C5187A9C6B00BFDE68 /* RetrievalAppointmentResponseDTO.h */,
+				612D20C6187A9C6B00BFDE68 /* RetrievalAppointmentResponseDTO.m */,
+				612D20C7187A9C6B00BFDE68 /* RetrievalPatientResponseDTO.h */,
+				612D20C8187A9C6B00BFDE68 /* RetrievalPatientResponseDTO.m */,
+				612D20C9187A9C6B00BFDE68 /* RetrievalScheduleResponseDTO.h */,
+				612D20CA187A9C6B00BFDE68 /* RetrievalScheduleResponseDTO.m */,
+				612D20CB187A9C6B00BFDE68 /* RetrievalUserResponseDTO.h */,
+				612D20CC187A9C6B00BFDE68 /* RetrievalUserResponseDTO.m */,
+				612D20CD187A9C6B00BFDE68 /* RetrievealDoctorResponseDTO.h */,
+				612D20CE187A9C6B00BFDE68 /* RetrievealDoctorResponseDTO.m */,
+				612D20CF187A9C6B00BFDE68 /* RetrieveResultsResponseDTO.h */,
+				612D20D0187A9C6B00BFDE68 /* RetrieveResultsResponseDTO.m */,
+				612D20D1187A9C6B00BFDE68 /* ScheduleDetail.h */,
+				612D20D2187A9C6B00BFDE68 /* ScheduleDetail.m */,
+				612D20D3187A9C6B00BFDE68 /* ScheduleDTO.h */,
+				612D20D4187A9C6B00BFDE68 /* ScheduleDTO.m */,
+				612D20D5187A9C6B00BFDE68 /* ScheduleListDTO.h */,
+				612D20D6187A9C6B00BFDE68 /* ScheduleListDTO.m */,
+				612D20D7187A9C6B00BFDE68 /* ScheduleResponse.h */,
+				612D20D8187A9C6B00BFDE68 /* ScheduleResponse.m */,
+				612D20D9187A9C6B00BFDE68 /* SeriesDTO.h */,
+				612D20DA187A9C6B00BFDE68 /* SeriesDTO.m */,
+				612D20DD187A9C6B00BFDE68 /* SyncResponseDTO.h */,
+				612D20DE187A9C6B00BFDE68 /* SyncResponseDTO.m */,
+				612D20DF187A9C6B00BFDE68 /* User.h */,
+				612D20E0187A9C6B00BFDE68 /* User.m */,
+				612D20E1187A9C6B00BFDE68 /* UserDetails.h */,
+				612D20E2187A9C6B00BFDE68 /* UserDetails.m */,
+				612D20E3187A9C6B00BFDE68 /* UserDTO.h */,
+				612D20E4187A9C6B00BFDE68 /* UserDTO.m */,
+				612D20E5187A9C6B00BFDE68 /* UserInfoDetail.h */,
+				612D20E6187A9C6B00BFDE68 /* UserInfoDetail.m */,
+				612D20E7187A9C6B00BFDE68 /* UserResponse.h */,
+				612D20E8187A9C6B00BFDE68 /* UserResponse.m */,
+				612D20E9187A9C6B00BFDE68 /* ViewDoctorDTO.h */,
+				612D20EA187A9C6B00BFDE68 /* ViewDoctorDTO.m */,
+				612D20EB187A9C6B00BFDE68 /* ViewResultDTO.h */,
+				612D20EC187A9C6B00BFDE68 /* ViewResultDTO.m */,
+				612D20ED187A9C6B00BFDE68 /* ViewResultResponseDTO.h */,
+				612D20EE187A9C6B00BFDE68 /* ViewResultResponseDTO.m */,
+				612D20EF187A9C6B00BFDE68 /* ViewScheduleDTO.h */,
+				612D20F0187A9C6B00BFDE68 /* ViewScheduleDTO.m */,
+				612D20F1187A9C6B00BFDE68 /* ViewScheduleListDTO.h */,
+				612D20F2187A9C6B00BFDE68 /* ViewScheduleListDTO.m */,
+				8A95ACF81887948800787337 /* CurrentUserDTO.h */,
+				8A95ACF91887948800787337 /* CurrentUserDTO.m */,
+				8AA17351191B663D00F957AA /* SyncDTO.h */,
+				8AA17352191B663D00F957AA /* SyncDTO.m */,
+				8A990D4F195D383B0004ADD2 /* CaseSyncResponseDTO.h */,
+				8A990D50195D383B0004ADD2 /* CaseSyncResponseDTO.m */,
+				8A990D52195D385C0004ADD2 /* MesicalRecordsSyncResponseDTO.h */,
+				8A990D53195D385C0004ADD2 /* MesicalRecordsSyncResponseDTO.m */,
+				8A90D33A1A22FD2900D3598F /* SyncablePojo.h */,
+				8A90D33B1A22FD2900D3598F /* SyncablePojo.m */,
+				8A90D3881A23047300D3598F /* SourceLocale.h */,
+				8A90D3891A23047300D3598F /* SourceLocale.m */,
+				8A91975C1A26F1C10079CFBA /* DesLocale.h */,
+				8A91975D1A26F1C10079CFBA /* DesLocale.m */,
+				8A5B270A1A970DBB00727B7B /* RecurringTimeSlotDTO.h */,
+				8A5B270B1A970DBB00727B7B /* RecurringTimeSlotDTO.m */,
+				8AD2350F1AA0666200209C1A /* DocScheduleDTO.h */,
+				8AD235101AA0666200209C1A /* DocScheduleDTO.m */,
+				8ABD383F1AA5A0400062A3A5 /* TimeSpecDTO.h */,
+				8ABD38401AA5A0400062A3A5 /* TimeSpecDTO.m */,
+				8AD1AABC1AB04AC200AAD93B /* ViewDocScheduleDTO.h */,
+				8AD1AABD1AB04AC200AAD93B /* ViewDocScheduleDTO.m */,
+				8AD5DB011ADF7CD80051E6CA /* VacationSpecDTO.h */,
+				8AD5DB021ADF7CD80051E6CA /* VacationSpecDTO.m */,
+				8AD5DB041ADF7D420051E6CA /* EmployeeVacation.h */,
+				8AD5DB051ADF7D420051E6CA /* EmployeeVacation.m */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		612D1F69187A9C2900BFDE68 /* NewNetMdBL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 612D1F8D187A9C2900BFDE68 /* Build configuration list for PBXNativeTarget "NewNetMdBL" */;
+			buildPhases = (
+				612D1F66187A9C2900BFDE68 /* Sources */,
+				612D1F67187A9C2900BFDE68 /* Frameworks */,
+				612D1F68187A9C2900BFDE68 /* CopyFiles */,
+				612D2233187AB07700BFDE68 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewNetMdBL;
+			productName = NewNetMdBL;
+			productReference = 612D1F6A187A9C2900BFDE68 /* libNewNetMdBL.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		612D1F79187A9C2900BFDE68 /* NewNetMdBLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 612D1F90187A9C2900BFDE68 /* Build configuration list for PBXNativeTarget "NewNetMdBLTests" */;
+			buildPhases = (
+				612D1F76187A9C2900BFDE68 /* Sources */,
+				612D1F77187A9C2900BFDE68 /* Frameworks */,
+				612D1F78187A9C2900BFDE68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				612D1F81187A9C2900BFDE68 /* PBXTargetDependency */,
+			);
+			name = NewNetMdBLTests;
+			productName = NewNetMdBLTests;
+			productReference = 612D1F7A187A9C2900BFDE68 /* NewNetMdBLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		612D1F62187A9C2900BFDE68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Netvarth;
+				TargetAttributes = {
+					612D1F79187A9C2900BFDE68 = {
+						TestTargetID = 612D21F8187AA08600BFDE68;
+					};
+				};
+			};
+			buildConfigurationList = 612D1F65187A9C2900BFDE68 /* Build configuration list for PBXProject "NewNetMdBL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 612D1F61187A9C2900BFDE68;
+			productRefGroup = 612D1F6B187A9C2900BFDE68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				612D1F69187A9C2900BFDE68 /* NewNetMdBL */,
+				612D1F79187A9C2900BFDE68 /* NewNetMdBLTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		612D1F78187A9C2900BFDE68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				612D1F88187A9C2900BFDE68 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		612D2233187AB07700BFDE68 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo $TARGET_BUILD_DIR\necho $BUILD_DIR\nif [ \"$PLATFORM_NAME\" = \"iphonesimulator\" ] ; then\nmv $TARGET_BUILD_DIR/lib$PRODUCT_NAME.a $TARGET_BUILD_DIR/lib\"$PRODUCT_NAME\"Sim.a\nelse\nmv $TARGET_BUILD_DIR/lib$PRODUCT_NAME.a $TARGET_BUILD_DIR/lib\"$PRODUCT_NAME\"Dev.a\nfi\ncp -r ${BUILD_DIR}/ ${PROJECT_DIR}/../BL/NewNetMdBL";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		612D1F66187A9C2900BFDE68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A9AC01A19599219004C24B2 /* AppointmentResponseDTO.m in Sources */,
+				612D2174187A9C6B00BFDE68 /* MessageListResponse.m in Sources */,
+				8AD5DB061ADF7D420051E6CA /* EmployeeVacation.m in Sources */,
+				612D217F187A9C6B00BFDE68 /* PatientListResponseDTO.m in Sources */,
+				612D2171187A9C6B00BFDE68 /* MedicalListResponseDTO.m in Sources */,
+				612D2163187A9C6B00BFDE68 /* DoctorMembership.m in Sources */,
+				612D2162187A9C6B00BFDE68 /* DoctorLoginDTO.m in Sources */,
+				612D2193187A9C6B00BFDE68 /* UserDetails.m in Sources */,
+				612D215B187A9C6B00BFDE68 /* DoctorExpertiseDTO.m in Sources */,
+				612D216F187A9C6B00BFDE68 /* LoginDTO.m in Sources */,
+				8A90D38A1A23047300D3598F /* SourceLocale.m in Sources */,
+				612D218B187A9C6B00BFDE68 /* ScheduleDetail.m in Sources */,
+				612D216E187A9C6B00BFDE68 /* HeaderResponseDTO.m in Sources */,
+				612D2166187A9C6B00BFDE68 /* DoctorResponse.m in Sources */,
+				612D2157187A9C6B00BFDE68 /* DoctorAchievementDTO.m in Sources */,
+				612D217D187A9C6B00BFDE68 /* PassPhraseDTO.m in Sources */,
+				612D215E187A9C6B00BFDE68 /* DoctorListExpertiseDTO.m in Sources */,
+				612D2175187A9C6B00BFDE68 /* NetMdActivationResponseDTO.m in Sources */,
+				612D215A187A9C6B00BFDE68 /* DoctorExperienceDTO.m in Sources */,
+				612D2151187A9C6B00BFDE68 /* AppointmentDetailsDTO.m in Sources */,
+				612D214C187A9C6B00BFDE68 /* LoginService.m in Sources */,
+				612D2159187A9C6B00BFDE68 /* DoctorDTO.m in Sources */,
+				612D2153187A9C6B00BFDE68 /* AppointmentListResponseDTO.m in Sources */,
+				612D2180187A9C6B00BFDE68 /* PatientMedicalHistoryDTO.m in Sources */,
+				8A90D33C1A22FD2900D3598F /* SyncablePojo.m in Sources */,
+				612D2161187A9C6B00BFDE68 /* DoctorListResponse.m in Sources */,
+				612D2186187A9C6B00BFDE68 /* RetrievalPatientResponseDTO.m in Sources */,
+				612D2184187A9C6B00BFDE68 /* ResultListResponseDTO.m in Sources */,
+				612D2155187A9C6B00BFDE68 /* CaseListResponseDTO.m in Sources */,
+				8A91975E1A26F1C10079CFBA /* DesLocale.m in Sources */,
+				612D216B187A9C6B00BFDE68 /* Expression.m in Sources */,
+				612D2196187A9C6B00BFDE68 /* UserResponse.m in Sources */,
+				612D2189187A9C6B00BFDE68 /* RetrievealDoctorResponseDTO.m in Sources */,
+				612D215C187A9C6B00BFDE68 /* DoctorListAchievementDTO.m in Sources */,
+				612D2156187A9C6B00BFDE68 /* CaseResponseDTO.m in Sources */,
+				612D2182187A9C6B00BFDE68 /* ReferralDetails.m in Sources */,
+				612D217B187A9C6B00BFDE68 /* OwnerDetailDTO.m in Sources */,
+				612D218C187A9C6B00BFDE68 /* ScheduleDTO.m in Sources */,
+				612D2181187A9C6B00BFDE68 /* PatientResponse.m in Sources */,
+				612D2188187A9C6B00BFDE68 /* RetrievalUserResponseDTO.m in Sources */,
+				612D219A187A9C6B00BFDE68 /* ViewScheduleDTO.m in Sources */,
+				612D2176187A9C6B00BFDE68 /* NetMdBranchDTO.m in Sources */,
+				612D2187187A9C6B00BFDE68 /* RetrievalScheduleResponseDTO.m in Sources */,
+				8A5B270C1A970DBB00727B7B /* RecurringTimeSlotDTO.m in Sources */,
+				612D2154187A9C6B00BFDE68 /* CaseDTO.m in Sources */,
+				612D2160187A9C6B00BFDE68 /* DoctorListQualificationDTO.m in Sources */,
+				612D218A187A9C6B00BFDE68 /* RetrieveResultsResponseDTO.m in Sources */,
+				612D216D187A9C6B00BFDE68 /* HeaderDTO.m in Sources */,
+				612D218D187A9C6B00BFDE68 /* ScheduleListDTO.m in Sources */,
+				612D2192187A9C6B00BFDE68 /* User.m in Sources */,
+				612D2170187A9C6B00BFDE68 /* LoginResponseDTO.m in Sources */,
+				612D2164187A9C6B00BFDE68 /* DoctorPersonalDTO.m in Sources */,
+				612D2169187A9C6B00BFDE68 /* ErrorDTO.m in Sources */,
+				612D214D187A9C6B00BFDE68 /* MessageService.m in Sources */,
+				612D2172187A9C6B00BFDE68 /* MedicalRecordDTO.m in Sources */,
+				8A9498AA1923443F000CB353 /* ServerService.m in Sources */,
+				612D214A187A9C6B00BFDE68 /* AppointmentService.m in Sources */,
+				612D2152187A9C6B00BFDE68 /* AppointmentDTO.m in Sources */,
+				612D2199187A9C6B00BFDE68 /* ViewResultResponseDTO.m in Sources */,
+				612D2173187A9C6B00BFDE68 /* MessageDTO.m in Sources */,
+				612D1F75187A9C2900BFDE68 /* NewNetMdBL.m in Sources */,
+				612D2191187A9C6B00BFDE68 /* SyncResponseDTO.m in Sources */,
+				612D2195187A9C6B00BFDE68 /* UserInfoDetail.m in Sources */,
+				612D218F187A9C6B00BFDE68 /* SeriesDTO.m in Sources */,
+				612D218E187A9C6B00BFDE68 /* ScheduleResponse.m in Sources */,
+				8A9CF2D5199375EE00BF78EE /* AdminService.m in Sources */,
+				612D2198187A9C6B00BFDE68 /* ViewResultDTO.m in Sources */,
+				8AD5DB031ADF7CD80051E6CA /* VacationSpecDTO.m in Sources */,
+				612D2194187A9C6B00BFDE68 /* UserDTO.m in Sources */,
+				612D216C187A9C6B00BFDE68 /* Filter.m in Sources */,
+				612D2178187A9C6B00BFDE68 /* NetMdResponseDTO.m in Sources */,
+				8A990D51195D383B0004ADD2 /* CaseSyncResponseDTO.m in Sources */,
+				612D2185187A9C6B00BFDE68 /* RetrievalAppointmentResponseDTO.m in Sources */,
+				612D2167187A9C6B00BFDE68 /* DoctorScheduleTimeDTO.m in Sources */,
+				612D217C187A9C6B00BFDE68 /* Parameter.m in Sources */,
+				8ABD38411AA5A0400062A3A5 /* TimeSpecDTO.m in Sources */,
+				8AD235111AA0666200209C1A /* DocScheduleDTO.m in Sources */,
+				612D217E187A9C6B00BFDE68 /* PatientDetail.m in Sources */,
+				612D219B187A9C6B00BFDE68 /* ViewScheduleListDTO.m in Sources */,
+				612D2165187A9C6B00BFDE68 /* DoctorQualificationDTO.m in Sources */,
+				612D216A187A9C6B00BFDE68 /* Errors.m in Sources */,
+				612D215F187A9C6B00BFDE68 /* DoctorListMembershipDTO.m in Sources */,
+				8AA17353191B663D00F957AA /* SyncDTO.m in Sources */,
+				612D2158187A9C6B00BFDE68 /* DoctorDetail.m in Sources */,
+				612D2168187A9C6B00BFDE68 /* ErrorCodeListResponseDTO.m in Sources */,
+				612D2197187A9C6B00BFDE68 /* ViewDoctorDTO.m in Sources */,
+				612D217A187A9C6B00BFDE68 /* NetMdUserDTO.m in Sources */,
+				612D2183187A9C6B00BFDE68 /* ResponseDTO.m in Sources */,
+				8AD1AABE1AB04AC200AAD93B /* ViewDocScheduleDTO.m in Sources */,
+				612D214B187A9C6B00BFDE68 /* DoctorService.m in Sources */,
+				8A95ACFA1887948800787337 /* CurrentUserDTO.m in Sources */,
+				612D214E187A9C6B00BFDE68 /* PatientService.m in Sources */,
+				612D2150187A9C6B00BFDE68 /* ServerCall.m in Sources */,
+				612D2177187A9C6B00BFDE68 /* NetMdDTO.m in Sources */,
+				612D2179187A9C6B00BFDE68 /* NetMdUserDetail.m in Sources */,
+				612D2149187A9C6B00BFDE68 /* DoctorValidator.m in Sources */,
+				612D215D187A9C6B00BFDE68 /* DoctorListExperienceDTO.m in Sources */,
+				8A990D54195D385C0004ADD2 /* MesicalRecordsSyncResponseDTO.m in Sources */,
+				612D214F187A9C6B00BFDE68 /* ScheduleService.m in Sources */,
+				6105006F188F9BF10033A7CF /* OwnerService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		612D1F76187A9C2900BFDE68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				612D1F8A187A9C2900BFDE68 /* NewNetMdBLTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		612D1F81187A9C2900BFDE68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 612D1F69187A9C2900BFDE68 /* NewNetMdBL */;
+			targetProxy = 612D1F80187A9C2900BFDE68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		612D1F86187A9C2900BFDE68 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				612D1F87187A9C2900BFDE68 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		612D1F8B187A9C2900BFDE68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		612D1F8C187A9C2900BFDE68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		612D1F8E187A9C2900BFDE68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/NewNetMdBL.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NewNetMdBL/NewNetMdBL-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		612D1F8F187A9C2900BFDE68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/NewNetMdBL.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NewNetMdBL/NewNetMdBL-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		612D1F91187A9C2900BFDE68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NetMd.app/NetMd";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NewNetMdBL/NewNetMdBL-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NewNetMdBLTests/NewNetMdBLTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		612D1F92187A9C2900BFDE68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NetMd.app/NetMd";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NewNetMdBL/NewNetMdBL-Prefix.pch";
+				INFOPLIST_FILE = "NewNetMdBLTests/NewNetMdBLTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		612D1F65187A9C2900BFDE68 /* Build configuration list for PBXProject "NewNetMdBL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				612D1F8B187A9C2900BFDE68 /* Debug */,
+				612D1F8C187A9C2900BFDE68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		612D1F8D187A9C2900BFDE68 /* Build configuration list for PBXNativeTarget "NewNetMdBL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				612D1F8E187A9C2900BFDE68 /* Debug */,
+				612D1F8F187A9C2900BFDE68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		612D1F90187A9C2900BFDE68 /* Build configuration list for PBXNativeTarget "NewNetMdBLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				612D1F91187A9C2900BFDE68 /* Debug */,
+				612D1F92187A9C2900BFDE68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 612D1F62187A9C2900BFDE68 /* Project object */;
+}

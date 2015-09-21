@@ -1,0 +1,29 @@
+//
+//  PatientOptions.m
+//  NetMdiOS
+//
+//  Created by Netvarth_Mac2 on 13/08/15.
+//  Copyright (c) 2015 Netvarth_Mac2. All rights reserved.
+//
+
+#import "PatientOptions.h"
+
+@interface PatientOptions ()
+
+-(IBAction)cancelPrsd:(id)sender;
+-(IBAction)viewPatientPrsd:(id)sender;
+
+@end
+@implementation PatientOptions
+
+-(IBAction)cancelPrsd:(id)sender
+{
+    [self.view removeFromSuperview];
+}
+-(IBAction)viewPatientPrsd:(id)sender
+{
+     [self.view removeFromSuperview];
+    UIViewController* rvc = [[[UIApplication sharedApplication] keyWindow] rootViewController];
+    
+}
+@end

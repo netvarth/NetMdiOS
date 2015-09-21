@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HeartBeatURL</key>
+	<string>http://www.youneverwait.com/activeSyncCloud/heartbeat</string>
+	<key>DispatcherURL</key>
+	<string>http://www.youneverwait.com/activeSyncCloud/syncableData/</string>
+	<key>PollerURL</key>
+	<string>http://www.youneverwait.com/activeSyncCloud/syncableData/pollerDetails</string>
+</dict>
+</plist>

@@ -1,0 +1,174 @@
+//
+//  SettingsSubOptionsTableViewCtrl.m
+//  NetMdiOS
+//
+//  Created by Netvarth_Mac2 on 31/07/15.
+//  Copyright (c) 2015 Netvarth_Mac2. All rights reserved.
+//
+
+#import "SettingsSubOptionsTableViewCtrl.h"
+
+@interface SettingsSubOptionsTableViewCtrl ()
+@property(nonatomic,strong) NSArray* appStngsOptns;
+@property(nonatomic,strong) NSArray* sysStngsOptns;
+
+@end
+
+@implementation SettingsSubOptionsTableViewCtrl
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    NSString* title = self.title;
+    _appStngsOptns = [[NSArray alloc] initWithObjects:@"Users",@"Labs",@"Pharmacies",@"Med-Db",@"Lab test Db",@"Config", nil];
+    _sysStngsOptns = [[NSArray alloc] initWithObjects:@"Backup",@"Health",@"Cloud",@"Licensing",@"Auditing",@"Updates", nil];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    if ([self.title isEqualToString:@"App Settings"])
+    {
+        return _appStngsOptns.count;
+    } else
+    {
+        return _sysStngsOptns.count;
+    }
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString* simpleTblIdentifier = @"SubOptionsCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTblIdentifier forIndexPath:indexPath];
+    if (cell == nil)
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTblIdentifier];
+    }
+    if ([self.title isEqualToString:@"App Settings"])
+    {
+        cell.textLabel.text = [_appStngsOptns objectAtIndex:indexPath.row];
+    } else
+    {
+      cell.textLabel.text = [_sysStngsOptns objectAtIndex:indexPath.row];
+    }
+    
+    return cell;
+}
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    NSString *cellText = cell.textLabel.text;
+    if ([self.title isEqualToString:@"App Settings"])
+    {
+        int rowIndex = indexPath.row;
+        switch (rowIndex)
+        {
+            case 0:
+                //Users
+               //[self loadCorrespondingViewController:@"UsersViewController"];
+                [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+                break;
+            case 1:
+                //Labs
+               //[self loadCorrespondingViewController:@"LabsViewController"];
+                [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+                break;
+            case 2:
+                //Pharmacies
+                //[self loadCorrespondingViewController:@"PharmaciesViewController"];
+                [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+                break;
+            case 3:
+                //Med Db
+                //[self loadCorrespondingViewController:@"MedDbViewController"];
+                [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+                break;
+            case 4:
+                //Lab Test Db
+                //[self loadCorrespondingViewController:@"LabTestDbViewController"];
+                [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+                break;
+            case 5:
+                //Config
+                //[self loadCorrespondingViewController:@"ConfigViewController"];
+                [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+                break;
+            default:
+                //Wrog Selection
+                break;
+        }
+
+    }
+    else
+    {
+        int rowIndex = indexPath.row;
+        switch (rowIndex)
+        {
+            case 0:
+                //Backup
+                //[self loadCorrespondingViewController:@"BackupViewController"];
+                [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+                break;
+            case 1:
+                //health
+                //[self loadCorrespondingViewController:@"HealthViewController"];
+                [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+                break;
+            case 2:
+                //Cloud
+                //[self loadCorrespondingViewController:@"CloudViewController"];
+                [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+                break;
+            case 3:
+                //Licensing
+                //[self loadCorrespondingViewController:@"LicensingViewController"];
+                [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+                break;
+            case 4:
+                //Auditing
+                //[self loadCorrespondingViewController:@"AuditingViewController"];
+                [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+                break;
+            case 5:
+                //Updates
+                //[self loadCorrespondingViewController:@"UpdatesViewController"];
+                [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+                break;
+            default:
+                //Wrog Selection
+                break;
+        }
+
+    }
+}
+
+-(void)loadCorrespondingViewController:(NSString*)vcName
+{
+    
+    UIViewController* rvc = [[[UIApplication sharedApplication] keyWindow] rootViewController];
+    UIViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:vcName];
+    vc.view.frame = CGRectMake(0.0f, 78.0f, 768.0f, 897.0f);
+    [rvc.view addSubview:vc.view];
+    [rvc addChildViewController:vc];
+    [vc didMoveToParentViewController:rvc];
+    
+}
+
+@end
